@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Incluyo meta charset para que se puedan visibilizar correctamente todos los símbolos, acentos, etc -->
+        <meta charset="UTF-8"> 
+        <title>TrotaMundos - Agencia de Viajes</title>
+        <link rel="stylesheet" type="text/css" href="../CSS/contacto.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <header>
+            <img id="logo" src="../imagenes/trotamundos.png"/>
+            <h1>TrotaMundos</h1>
+
+            <form id="iniciarSesion">
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" name="usuario" required/>
+                <label for="pwd">Contraseña</label>
+                <input type="password" id="pwd" name="pwd" required/>
+                <input type="submit" id="login" name="login" value="Login" required/>
+            </form>
+
+            <a id="altaUsuario" href="altausuarios.html"><strong>Alta usuario</strong></a>
+
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="viajes.html">Viajes</a>
+                <a href="viajes_grupo.html">Viajes grupales</a>
+                <a href="ofertas.html">Ofertas</a>
+                <a href="sobre_agencia.html">Sobre nosotros</a>
+                <a href="sugerencias.html">Sugerencias</a>
+            </nav>
+        </header>
+
+        <main>
+            <img id="atencionCliente" src="https://portalinnova.cl/wp-content/uploads/2026/02/LRM-COMUNICACIONES_ZEROQ-17.jpg"/>
+            
+            <p id="textoCliente0"><strong>Atención al Cliente</strong></p>
+            <p id="textoCliente1">En TrotaMundos entendemos que un viaje empieza mucho antes de subir al avión. Por eso ponemos a tu disposición nuestro Centro de 
+                Atención al Cliente, un servicio cercano, directo y siempre disponible para acompañarte en cada etapa de tu aventura.</p>
+            <p id="textoCliente2">Nuestro equipo de asesores especializados se encarga de supervisar y gestionar cada reserva, ofreciéndote asistencia personalizada 
+                y resolviendo cualquier duda que pueda surgir antes, durante o después de tu viaje. Además, contamos con diversos canales de 
+                comunicación desde los cuales podrás contactar de forma rápida y eficaz. Nuestro compromiso es garantizar una comunicación fluida 
+                entre el viajero y los proveedores de servicios para disfrutar de una experiencia cómoda, segura y sin preocupaciones.</p>
+            <p id="textoCliente3">Gracias por confiar en nosotros.</p>
+
+            <!-- Pongo mailto como action para que se envíe el correo. ? es el interruptor. Con method indicamos que se van a enviar datos.
+            Con enctype=text/plain volcamos todos los datos que ha metido el usuario en el formulario en el cuerpo del correo -->
+            <form id="ponerseEnContacto" action="mailto:trotamundospw@gmail.com?subject=CONSULTA PARA TROTAMUNDOS" method="post" enctype="text/plain">
+                <p id="tituloFormulario"><strong>Ponerse en Contacto</strong></p>
+                <input id="nombre" type="text" name="Nombre" placeholder="NOMBRE" required>
+                <input id="apellidos" type="text" name="Apellidos" placeholder="APELLIDOS" required>
+                <input id="tel" type="tel" name="Telefono" placeholder="TELEFONO" required>
+                <input id="asunto" type="text" name="Asunto" placeholder="ASUNTO" required>
+                <input id="mensaje" name="Mensaje" type="text" placeholder="MENSAJE" required>
+                <input id="enviarMensaje" type="submit" value="ENVIAR MENSAJE">
+            </form>
+
+            <p id="llamanos"><strong>LLÁMANOS</strong></p>
+            <a id="telefono" href="tel:644111022">644 111 022</a>
+            <p id="diasHorario"><em>Lunes a Viernes</em></p>
+            <p id="horasHorario"><em>De 9:00 a 20:00</em></p>
+    
+            <details id="contactoDesarrollador">
+                <summary><strong>Contacto de la desarrolladora</strong></summary>
+                <li>
+                    <p><strong>Nombre: </strong>Estefanía Madrid Ortega</p>
+                </li>
+                <li>
+                    <p><strong>Correo electrónico: </strong>
+                        <a id="correoDetalles" href="mailto:estefaniamo@correo.ugr.es">estefaniamo@correo.ugr.es</a>
+                    </p>
+                </li>
+                <li>
+                    <p><strong>GitHub: </strong>
+                        <!-- Pongo target="_blank" para que el perfil de GitHub se abra en una nueva pestaña y no reemplace la pestaña actual-->
+                        <a id="githubDetalles" href="https://github.com/Estefi-Madrid" target="_blank">Estefi-Madrid</a>
+                    </p>
+                </li>
+                <li>
+                    <p><strong>LinkedIn: </strong>
+                        <a id="linkedinDetalles" href="https://www.linkedin.com/in/estefanía-madrid-ortega-9470423bb/" target="_blank">Estefanía Madrid Ortega</a>
+                    </p>
+                </li>
+                
+            </details>
+        </main>
+
+        <footer>
+            <p id="sobreNosotros">SOBRE NOSOTROS</p>
+            <a href="contacto.html">Contacto</a>
+            <br>
+            <a href="https://docs.google.com/document/d/1J6dwtbxbZyRSLV7A461OkP3R2SLclDsuH2891gszpWE/edit?usp=sharing">Desarrollo</a>
+            <br><br>
+            <hr>
+            <p id="copyright">© TrotaMundos</p>
+            <p id="ultimaModificacion">Última modificación: 29/04/2026</p>
+        </footer>
+
+    </body>
+</html>

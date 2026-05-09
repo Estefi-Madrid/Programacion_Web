@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Incluyo meta charset para que se puedan visibilizar correctamente todos los símbolos, acentos, etc -->
+        <meta charset="UTF-8"> 
+        <title>TrotaMundos - Agencia de Viajes</title>
+        <link rel="stylesheet" type="text/css" href="../../../CSS/viajes_pais.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <header>
+            <img id="logo" src="../../../imagenes/trotamundos.png"/>
+            <h1>TrotaMundos</h1>
+
+            <form id="iniciarSesion">
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" name="usuario" required/>
+                <label for="pwd">Contraseña</label>
+                <input type="password" id="pwd" name="pwd" required/>
+                <input type="submit" id="login" name="login" value="Login" required/>
+            </form>
+
+            <a id="altaUsuario" href="../../altausuarios.html"><strong>Alta usuario</strong></a>
+
+            <nav>
+                <a href="../../index.html">Inicio</a>
+                <a href="../../viajes.html">Viajes</a>
+                <a href="../../viajes_grupo.html">Viajes grupales</a>
+                <a href="../../ofertas.html">Ofertas</a>
+                <a href="../../sobre_agencia.html">Sobre nosotros</a>
+                <a href="../../sugerencias.html">Sugerencias</a>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Menú lateral por continentes / países -->
+            <aside id="menuViajes">
+                <h2>Destinos por continente</h2>
+                <ul>
+                    <li><strong>Europa</strong>
+                        <ul>
+                            <li><a href="../Europa/viajes_francia.html">Francia</a></li>
+                            <li><a href="../Europa/viajes_italia.html">Italia</a></li>
+                            <li><a href="../Europa/viajes_alemania.html">Alemania</a></li>
+                            <li><a href="../Europa/viajes_noruega.html">Noruega</a></li>
+                            <li><a href="../Europa/viajes_suiza.html">Suiza</a></li>
+                            <li><a href="../Europa/viajes_grecia.html">Grecia</a></li>
+                        </ul>
+                    </li>
+                    <li><strong>América</strong>
+                        <ul>
+                            <li><a href="../America/viajes_canada.html">Canadá</a></li>
+                            <li><a href="../America/viajes_eeuu.html">EE.UU.</a></li>
+                            <li><a href="../America/viajes_mexico.html">México</a></li>
+                            <li><a href="../America/viajes_argentina.html">Argentina</a></li>
+                            <li><a href="../America/viajes_brasil.html">Brasil</a></li>
+                        </ul>
+                    </li>
+                    <li><strong>Asia</strong>
+                        <ul>
+                            <li><a href="../Asia/viajes_china.html">China</a></li>
+                            <li><a href="../Asia/viajes_japon.html">Japón</a></li>
+                            <li><a href="../Asia/viajes_taiwan.html">Taiwán</a></li>
+                            <li><a href="../Asia/viajes_tailandia.html">Tailandia</a></li>
+                            <li><a href="../Asia/viajes_maldivas.html">Maldivas</a></li>
+                            <li><a href="../Asia/viajes_srilanka.html">Sri Lanka</a></li>
+                        </ul>
+                    </li>  
+                    <li><strong>Oceanía</strong>
+                        <ul>
+                            <li><a href="../Oceania/viajes_australia.html">Australia</a></li>
+                            <li><a href="../Oceania/viajes_nuevazelanda.html">Nueva Zelanda</a></li>
+                            <li><a href="../Oceania/viajes_fiji.html">Fiji</a></li>
+                        </ul>
+                    </li>   
+                    <li><strong>África</strong>
+                        <ul>
+                            <li><a href="../Africa/viajes_kenia.html">Kenia</a></li>
+                            <li><a href="../Africa/viajes_egipto.html">Egipto</a></li>
+                            <li><a href="../Africa/viajes_tanzania.html">Tanzania</a></li>
+                        </ul>
+                    </li>  
+                </ul>
+            </aside>
+
+            <section id="listaViajes">
+                <h3 id="tituloListaViajes">Viajes en Sri Lanka</h3>
+                
+                <!-- PRIMERA FILA -->
+                <article class="viaje">
+                    <a id="colombo" href="../Asia/Sri Lanka/81.html">
+                        <img src="../../../imagenes/colombo.jpg">
+                    </a>
+                    <h3>Colombo</h3>
+                    <p>Fechas disponibles: 11-18 Febrero</p>
+                    <p id="separadorCentro"> </p>
+                    <p>Capital dinámica que mezcla modernidad y tradición. Visita el paseo 
+                        marítimo de Galle Face Green, templos budistas y mercados locales.</p>
+                </article>
+
+                <article class="viaje">
+                    <a id="kandy" href="../Asia/Sri Lanka/82.html">
+                        <img src="../../../imagenes/kandy.jpg">
+                    </a>
+                    <h3>Kandy</h3>
+                    <p>Fechas disponibles: 24-31 Marzo</p>
+                    <p id="separadorCentro"> </p>
+                    <p>Ciudad sagrada rodeada de montañas. Alberga el Templo del Diente de Buda y 
+                        ofrece paisajes naturales espectaculares.</p>
+                </article>
+
+                <article class="viaje">
+                    <a id="galle" href="../Asia/Sri Lanka/83.html">
+                        <img src="../../../imagenes/galle.jpg">
+                    </a>                    
+                    <h3>Galle</h3>
+                    <p>Fechas disponibles: 6-13 Mayo</p>
+                    <p id="separadorCentro"> </p>
+                    <p>Ciudad costera con un encantador fuerte colonial declarado Patrimonio de la Humanidad. 
+                        Ideal para pasear por sus calles históricas junto al mar.</p>
+                </article>
+
+                <!-- SEGUNDA FILA -->
+                 <article class="viaje">
+                    <a id="jaffna" href="../Asia/Sri Lanka/84.html">
+                        <img src="../../../imagenes/jaffna.jpg">
+                    </a>
+                    <h3>Jaffna</h3>
+                    <p>Fechas disponibles: 9-16 Agosto</p>
+                    <p id="separadorCentro"> </p>
+                    <p>Ciudad del norte con una cultura única. Descubre templos hindúes, fortalezas y una rica tradición local menos turística.</p>
+                </article>
+
+                <article class="viaje">
+                    <a id="negombo" href="../Asia/Sri Lanka/85.html">
+                        <img src="../../../imagenes/negombo.jpg">
+                    </a>
+                    <h3>Negombo</h3>
+                    <p>Fechas disponibles: 21-28 Noviembre</p>
+                    <p id="separadorCentro"> </p>
+                    <p>Destino costero cercano al aeropuerto. Conocido por sus playas, canales y ambiente relajado ideal para comenzar o finalizar el viaje.</p>
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            <p id="sobreNosotros">SOBRE NOSOTROS</p>
+            <a href="contacto.html">Contacto</a>
+            <br>
+            <a href="https://docs.google.com/document/d/1J6dwtbxbZyRSLV7A461OkP3R2SLclDsuH2891gszpWE/edit?usp=sharing">Desarrollo</a>
+            <br><br>
+            <hr>
+            <p id="copyright">© TrotaMundos</p>
+            <p id="ultimaModificacion">Última modificación: 29/04/2026</p>
+        </footer>
+
+    </body>
+</html>

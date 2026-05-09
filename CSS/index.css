@@ -1,0 +1,323 @@
+/* ESTILO HTML */
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+}
+
+/* ESTILO BODY */
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+nav {
+    /* Obligo al nav a que ocupe todo el ancho para que flex-wrap pueda bajarlo a la siguiente línea cuando los elementos 
+    no caben en estas */
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+}
+
+nav a {    
+    transition: background-color 0.3s, box-shadow 0.3s;
+    background-color: transparent;
+}
+
+nav a:hover {
+    /* 0: desplazamiento horizontal (offset-x)
+    10px: desplazamiento vertical (offset-y)
+    20px: desenfoque
+    rgba(0,0,0,0.2) → color de la sombra
+    (0,0,0) = negro.
+    0.2 = transparencia del 20%. */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+/* ESTILO BODY: Cabecera */
+header {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    /* Uso flex-wrap para permitir que el menú de navegación baje a la siguiente línea */
+    flex-wrap: wrap; 
+}
+
+#altaUsuario, #login {
+    display: inline-block;              /* Para poder darle padding */
+    padding: 8px 15px;                  /* Espacio dentro del “botón” */
+    background-color: #556B2F;      
+    color: white;               
+    text-decoration: none;              /* Quita subrayado */
+    border-radius: 15px;                /* Esquinas redondeadas */
+    font-weight: none;
+    border: none;                       /* Para quitar el borde negro del botón de login */
+    font-size: 16px;
+    align-items: center;
+}
+
+#altaUsuario {
+    margin-left: 10px;
+}
+
+#iniciarSesion {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 10px;
+}
+
+#usuario, #pwd {
+    border-radius: 15px;
+}
+
+#logo {
+    width: 200px;
+}
+
+/* ESTILO BODY: Main - Fondo + Formulario Destino */
+#imagenConNombre {
+    position: relative;     /* Para que el h1 de TrotaMundos pueda posicionarse sobre la imagen */
+}
+
+#imagenSitio {
+    width: 100%;
+    display: block;         /* Elimina un pequeño espacio que suelen dejar las imágenes */
+    height: auto;           /* Mantiene la proporción para que no se deforme */
+}
+
+#nombreAgencia {
+    position: absolute;     /* Posiciono h1 respecto a su primer ancestro posicionado (div) */
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+#textoAgencia1, #textoAgencia2, #textoAgencia3, #separador1, #separador2 {
+    position: absolute;
+    display: inline-block;
+    color: white;
+}
+
+#textoAgencia1 { 
+    top: 170px; 
+    left: 20%; 
+}
+
+#textoAgencia2 { 
+    top: 170px; 
+    left: 43.5%; 
+}
+
+#textoAgencia3 { 
+    top: 170px; 
+    left: 62.5%; 
+}
+
+#separador1 {
+    top: 170px;
+    left: 41%;
+}
+
+#separador2 {
+    top: 170px;
+    left: 60%;
+}
+
+#buscarDestino {
+    position: absolute;
+    border-radius: 15px;
+    background-color: rgba(245, 245, 245, 0.7);
+    top: 280px;
+    padding: 50px;
+    width: auto;
+    gap: 40px;
+    display: flex;
+    left: 250px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#buscarDestino label {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+#buscarDestino input {
+    border-radius: 15px;
+    border-color: grey;
+    border: none;
+    padding: 10px;
+}
+
+#enviarDestino {
+    width: 100%;
+    padding: 8px 15px;                  /* Espacio dentro del botón */
+    background-color: #556B2F;      
+    color: white;               
+    text-decoration: none;              /* Quita subrayado */
+    border-radius: 15px;                /* Esquinas redondeadas */
+    border: none;                       /* Para quitar el borde negro del botón */
+    font-size: 16px;
+}
+
+/* ESTILO FOOTER */
+footer {
+    background-color: #556B2F;
+    width: auto;
+    padding: 10px;
+}
+
+footer p, footer a {
+    margin-left: 20px;
+}
+
+footer p {
+    font-weight: bold;
+}
+
+footer a:link {
+    font-weight: normal;
+}
+
+#copyright, #ultimaModificacion {
+    font-weight: normal;
+    text-align: center;
+}
+
+#sobreNosotros {
+    border-bottom: 3px solid white;
+    padding-bottom: 5px;
+    width: 150px;
+}
+
+/* LINKS */
+a:link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-right: 40px;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+/* RESPONSIVE DESIGN */
+/* Para móvil he puesto un máximo de 768px */
+@media (max-width: 768px) {
+
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 5px;
+    }
+
+    #logo {
+        width: 80px;
+        order: 1;
+        padding-bottom: 10px;
+    }
+
+    header > h1 {
+        font-size: 1.1rem;
+        margin: 0px;
+        order: 2;
+        margin: 0px 0px 0px 10px;
+        flex-shrink: 1;
+    }
+
+    #iniciarSesion {
+        order: 3;
+        margin-left: auto;
+        gap: 3px;
+    }
+
+    #iniciarSesion label {
+        font-size: 0.8rem;
+    }
+
+    #usuario, #pwd {
+        width: 60px;  
+    }
+
+    #login {
+        font-size: 0.7rem;
+        padding: 4px 8px;
+    }
+
+    #altaUsuario {
+        order: 3;
+        margin-left: 5px;
+        padding: 4px 8px;
+        font-size: 0.7rem;
+        white-space: nowrap;
+    }
+
+    nav {
+        width: 100%;              /* El nav ocupa toda la línea y baja solo */
+        order: 99;
+    }
+
+    nav a {
+        margin-right: 6px !important;
+        font-size: 0.8rem;
+    } 
+
+    a:link {
+        margin-right: 6px;
+    }
+
+    #nombreAgencia {
+        top: 10%;
+        font-size: 1.4rem;
+        z-index: 1;           
+    }
+
+    #textoAgencia1, #textoAgencia2, #textoAgencia3 {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);  /* Centra horizontalmente */
+        font-size: 0.8rem;            /* Letra más pequeña para que quepa */
+        white-space: nowrap;          /* Evito que el texto se parta en dos líneas */
+        z-index: 1;
+    }
+
+    #textoAgencia1 { top: 140px; }
+    #textoAgencia2 { top: 160px; }
+    #textoAgencia3 { top: 180px; }
+
+    /* Los separadores | no tienen sentido en vertical */
+    #separador1, #separador2 {
+        display: none;
+    }
+
+    #imagenConNombre {
+        min-height: 600px;  /* Doy espacio suficiente para que el formulario no se salga */
+    }
+
+    #imagenSitio {
+        position: absolute;   
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;    
+        z-index: 0;           /* Queda detrás de todo lo demás */
+    }
+
+    #buscarDestino {
+        top: 210px;
+        left: 5%;           
+        right: 5%;          
+        width: auto;        
+        padding: 20px;      
+        gap: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+}

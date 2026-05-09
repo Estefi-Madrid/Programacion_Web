@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Incluyo meta charset para que se puedan visibilizar correctamente todos los símbolos, acentos, etc -->
+        <meta charset="UTF-8"> 
+        <title>TrotaMundos - Agencia de Viajes</title>
+        <link rel="stylesheet" type="text/css" href="../../../CSS/viajes_pais.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <header>
+            <img id="logo" src="../../../imagenes/trotamundos.png"/>
+            <h1>TrotaMundos</h1>
+
+            <form id="iniciarSesion">
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" name="usuario" required/>
+                <label for="pwd">Contraseña</label>
+                <input type="password" id="pwd" name="pwd" required/>
+                <input type="submit" id="login" name="login" value="Login" required/>
+            </form>
+
+            <a id="altaUsuario" href="../../altausuarios.html"><strong>Alta usuario</strong></a>
+
+            <nav>
+                <a href="../../index.html">Inicio</a>
+                <a href="../../viajes.html">Viajes</a>
+                <a href="../../viajes_grupo.html">Viajes grupales</a>
+                <a href="../../ofertas.html">Ofertas</a>
+                <a href="../../sobre_agencia.html">Sobre nosotros</a>
+                <a href="../../sugerencias.html">Sugerencias</a>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Menú lateral por continentes / países -->
+            <aside id="menuViajes">
+                <h2>Destinos por continente</h2>
+                <ul>
+                    <li><strong>Europa</strong>
+                        <ul>
+                            <li><a href="../Europa/viajes_francia.html">Francia</a></li>
+                            <li><a href="../Europa/viajes_italia.html">Italia</a></li>
+                            <li><a href="../Europa/viajes_alemania.html">Alemania</a></li>
+                            <li><a href="../Europa/viajes_noruega.html">Noruega</a></li>
+                            <li><a href="../Europa/viajes_suiza.html">Suiza</a></li>
+                            <li><a href="../Europa/viajes_grecia.html">Grecia</a></li>
+                        </ul>
+                    </li>
+                    <li><strong>América</strong>
+                        <ul>
+                            <li><a href="../America/viajes_canada.html">Canadá</a></li>
+                            <li><a href="../America/viajes_eeuu.html">EE.UU.</a></li>
+                            <li><a href="../America/viajes_mexico.html">México</a></li>
+                            <li><a href="../America/viajes_argentina.html">Argentina</a></li>
+                            <li><a href="../America/viajes_brasil.html">Brasil</a></li>
+                        </ul>
+                    </li>
+                    <li><strong>Asia</strong>
+                        <ul>
+                            <li><a href="../Asia/viajes_china.html">China</a></li>
+                            <li><a href="../Asia/viajes_japon.html">Japón</a></li>
+                            <li><a href="../Asia/viajes_taiwan.html">Taiwán</a></li>
+                            <li><a href="../Asia/viajes_tailandia.html">Tailandia</a></li>
+                            <li><a href="../Asia/viajes_maldivas.html">Maldivas</a></li>
+                            <li><a href="../Asia/viajes_srilanka.html">Sri Lanka</a></li>
+                        </ul>
+                    </li>  
+                    <li><strong>Oceanía</strong>
+                        <ul>
+                            <li><a href="../Oceania/viajes_australia.html">Australia</a></li>
+                            <li><a href="../Oceania/viajes_nuevazelanda.html">Nueva Zelanda</a></li>
+                            <li><a href="../Oceania/viajes_fiji.html">Fiji</a></li>
+                        </ul>
+                    </li>   
+                    <li><strong>África</strong>
+                        <ul>
+                            <li><a href="../Africa/viajes_kenia.html">Kenia</a></li>
+                            <li><a href="../Africa/viajes_egipto.html">Egipto</a></li>
+                            <li><a href="../Africa/viajes_tanzania.html">Tanzania</a></li>
+                        </ul>
+                    </li>  
+                </ul>
+            </aside>
+
+            <section id="listaViajes">
+                <h3 id="tituloListaViajes">Viajes en Fiji</h3>
+                
+                <!-- PRIMERA FILA -->
+                <article class="viaje">
+                    <a id="suva" href="../Oceania/Fiji/96.html">
+                        <img src="../../../imagenes/suva.jpg">
+                    </a>
+                    <h3>Suva</h3>
+                    <p>Fechas disponibles: 12-19 Marzo</p>
+                    <p id="separadorCentro"> </p>
+                    <p>Capital multicultural con mercados, museos y un ambiente local auténtico.</p>
+                </article>
+
+                <article class="viaje">
+                    <a id="nadi" href="../Oceania/Fiji/97.html">
+                        <img src="../../../imagenes/nadi.jpg">
+                    </a>
+                    <h3>Nadi</h3>
+                    <p>Fechas disponibles: 8-15 Julio</p>
+                    <p id="separadorCentro"> </p>
+                    <p>Principal puerta de entrada al país. Ideal para acceder a resorts y playas paradisíacas.</p>
+                </article>
+
+                <article class="viaje">
+                    <a id="lautoka" href="../Oceania/Fiji/98.html">
+                        <img src="../../../imagenes/lautoka.jpg">
+                    </a>                    
+                    <h3>Lautoka</h3>
+                    <p>Fechas disponibles: 20-27 Mayo</p>
+                    <p id="separadorCentro"> </p>
+                    <p>Conocida como la “ciudad del azúcar”. Ambiente tranquilo y cercano a playas y plantaciones.</p>
+                </article>
+
+                <!-- SEGUNDA FILA -->
+                 <article class="viaje">
+                    <a id="labasa" href="../Oceania/Fiji/99.html">
+                        <img src="../../../imagenes/labasa.jpg">
+                    </a>
+                    <h3>Labasa</h3>
+                    <p>Fechas disponibles: 3-10 Febrero</p>
+                    <p id="separadorCentro"> </p>
+                    <p>Ciudad en la isla de Vanua Levu con fuerte influencia cultural y paisajes naturales.</p>
+                </article>
+
+                <article class="viaje">
+                    <a id="levuka" href="../Oceania/Fiji/100.html">
+                        <img src="../../../imagenes/levuka.jpg">
+                    </a>
+                    <h3>Levuka</h3>
+                    <p>Fechas disponibles: 14-21 Agosto</p>
+                    <p id="separadorCentro"> </p>
+                    <p>Antigua capital con encanto colonial. Perfecta para conocer la historia de Fiji en un entorno único.</p>
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            <p id="sobreNosotros">SOBRE NOSOTROS</p>
+            <a href="contacto.html">Contacto</a>
+            <br>
+            <a href="https://docs.google.com/document/d/1J6dwtbxbZyRSLV7A461OkP3R2SLclDsuH2891gszpWE/edit?usp=sharing">Desarrollo</a>
+            <br><br>
+            <hr>
+            <p id="copyright">© TrotaMundos</p>
+            <p id="ultimaModificacion">Última modificación: 29/04/2026</p>
+        </footer>
+
+    </body>
+</html>

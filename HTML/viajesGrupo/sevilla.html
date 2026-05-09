@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Incluyo meta charset para que se puedan visibilizar correctamente todos los símbolos, acentos, etc -->
+        <meta charset="UTF-8"> 
+        <title>TrotaMundos - Agencia de Viajes</title>
+        <link rel="stylesheet" type="text/css" href="../../CSS/viajeX.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <header>
+            <img id="logo" src="../../imagenes/trotamundos.png"/>
+            <h1>TrotaMundos</h1>
+
+            <form id="iniciarSesion">
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" name="usuario" required/>
+                <label for="pwd">Contraseña</label>
+                <input type="password" id="pwd" name="pwd" required/>
+                <input type="submit" id="login" name="login" value="Login" required/>
+            </form>
+
+            <a id="altaUsuario" href="../altausuarios.html"><strong>Alta usuario</strong></a>
+
+            <nav>
+                <a href="../index.html">Inicio</a>
+                <a href="../viajes.html">Viajes</a>
+                <a href="../viajes_grupo.html">Viajes grupales</a>
+                <a href="../ofertas.html">Ofertas</a>
+                <a href="../sobre_agencia.html">Sobre nosotros</a>
+                <a href="../sugerencias.html">Sugerencias</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="imagenSitioNombre">
+                <img id="imagenPrincipal" src="../../imagenes/sevilla.jpg">
+                <h1>Sevilla</h1>
+            </section>
+
+            <p id="fechasDisponibles">Fechas disponibles: 4 al 9 de Junio</p>
+            
+            <section class="alojamientos">
+                <h2>Alojamientos</h2>
+
+                <article>
+                    <p class="nombreHotel"><strong>Hotel Don Paco</strong></p>
+                    <small><em>Plaza Padre Jerónimo de Córdoba, 4</em></small>
+                    <details>
+                        <summary><em>Datos de contacto</em></summary>
+                        <li><p><strong>Teléfono: </strong>
+                            <a href="tel:954506999">954 50 69 99</a>
+                        </p></li>
+                        <li><p><strong>Sitio web: </strong>
+                            <a href="https://www.hoteldonpaco.com/?utm_source=google&utm_medium=organic&utm_campaign=my_business">hoteldonpaco.com</a>
+                        </p></li>
+                    </details>
+                </article>
+
+                <article>
+                    <p class="nombreHotel"><strong>Hotel Bécquer</strong></p>
+                    <small><em>C. Reyes Católicos, 4</em></small>
+                    <details>
+                        <summary><em>Datos de contacto</em></summary>
+                        <li><p><strong>Teléfono: </strong>
+                            <a href="tel:954228900">954 22 89 00</a>
+                        </p></li>
+                        <li><p><strong>Sitio web: </strong>
+                            <a href="https://www.hotelbecquer.com/">hotelbecquer.com</a>
+                        </p></li>
+                    </details>
+                </article>
+
+                <article>
+                    <p class="nombreHotel"><strong>Eurostars Torre Sevilla</strong></p>
+                    <small><em>Plaza Alcalde Alfredo Sánchez Monteseirín, 2</em></small>
+                    <details>
+                        <summary><em>Datos de contacto</em></summary>
+                        <li><p><strong>Teléfono: </strong>
+                            <a href="tel:913342196">913 34 21 96</a>
+                        </p></li>
+                        <li><p><strong>Sitio web: </strong>
+                            <a href="https://www.eurostarshotels.com/eurostars-torre-sevilla.html?referer_code=bs1gg11ww&gad_source=1&gad_campaignid=776667561&gbraid=0AAAAAD-VyO4AisjJ2yug5T8isD3icZXBF&gclid=CjwKCAjwtcHPBhADEiwAWo3sJvHH9bSwXfY_zpOx5_-mSqhK2LaD7OBoi-y2Ffd7Ep-7km_ceSo_zBoC5QgQAvD_BwE">eurostarshotels.com</a>
+                        </p></li>
+                    </details>
+                </article>
+
+                <article>
+                    <p class="nombreHotel"><strong>Hotel Fernando III</strong></p>
+                    <small><em>C. San José, 21</em></small>
+                    <details>
+                        <summary><em>Datos de contacto</em></summary>
+                        <li><p><strong>Teléfono: </strong>
+                            <a href="tel:954217307">954 21 73 07</a>
+                        </p></li>
+                        <li><p><strong>Sitio web: </strong>
+                            <a href="https://www.hotelfernandoiii.es/">hotelfernandoiii.es</a>
+                        </p></li>
+                    </details>
+                </article>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50813.17403751131!2d-6.0000000000000000!3d37.388630000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126c1117b7c3c9%3A0x1c1b1c1b1c1b1c1b!2sSevilla!5e0!3m2!1ses!2ses!4v1777375000000!5m2!1ses!2ses"
+                    width="600"
+                    height="450"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </section>
+
+            <section class="itinerario">
+                <h2>Itinerario</h2>
+
+                <article>
+                    <h3>Día 1 - 4 de junio</h3>
+                    <ul>
+                        <li>Llegada a Sevilla y check-in en el alojamiento</li>
+                        <li>Paseo por el centro histórico</li>
+                        <li>Plaza Nueva y entorno de la Catedral</li>
+                        <li>Cena de bienvenida con tapas sevillanas</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>Día 2 - 5 de junio</h3>
+                    <ul>
+                        <li>Visita a la Catedral de Sevilla</li>
+                        <li>La Giralda</li>
+                        <li>Real Alcázar de Sevilla</li>
+                        <li>Paseo por el barrio de Santa Cruz</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>Día 3 - 6 de junio</h3>
+                    <ul>
+                        <li>Plaza de España y Parque de María Luisa</li>
+                        <li>Archivo de Indias</li>
+                        <li>Paseo en bicicleta por el río Guadalquivir</li>
+                        <li>Tarde libre</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>Día 4 - 7 de junio</h3>
+                    <ul>
+                        <li>Excursión a Itálica (Santiponce)</li>
+                        <li>Anfiteatro romano</li>
+                        <li>Regreso a Sevilla</li>
+                        <li>Puesta de sol en Triana</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>Día 5 - 8 de junio</h3>
+                    <ul>
+                        <li>Mercado de Triana</li>
+                        <li>Paseo por el barrio de Triana</li>
+                        <li>Espectáculo de flamenco</li>
+                        <li>Cena de grupo</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>Día 6 - 9 de junio</h3>
+                    <ul>
+                        <li>Mañana libre para compras</li>
+                        <li>Último paseo por la ciudad</li>
+                        <li>Regreso</li>
+                    </ul>
+                </article>
+            </section>
+
+            <h2 id="actividades">Actividades</h2>
+
+            <section class="actividades">
+                <article>
+                    <img src="../../imagenes/catedralSevilla.jpg">
+                    <h2>Culturales</h2>
+                    <ul>
+                        <li>Catedral de Sevilla</li>
+                        <li>Real Alcázar</li>
+                        <li>Archivo de Indias</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <img src="../../imagenes/triana.jpg">
+                    <h2>Aventuras</h2>
+                    <ul>
+                        <li>Paseo en bici por el Guadalquivir</li>
+                        <li>Ruta por Triana</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <img src="../../imagenes/parqueMariaLuisa.jpg">
+                    <h2>En naturaleza</h2>
+                    <ul>
+                        <li>Parque de María Luisa</li>
+                        <li>Plaza de España</li>
+                    </ul>
+                </article>
+            </section>
+
+            <p id="precios">Precios: Desde 1800 € a 2700 €</p>
+
+        </main>
+
+        <footer>
+            <p id="sobreNosotros">SOBRE NOSOTROS</p>
+            <a href="../contacto.html">Contacto</a>
+            <br>
+            <a href="https://docs.google.com/document/d/1J6dwtbxbZyRSLV7A461OkP3R2SLclDsuH2891gszpWE/edit?usp=sharing">Desarrollo</a>
+            <br><br>
+            <hr>
+            <p id="copyright">© TrotaMundos</p>
+            <p id="ultimaModificacion">Última modificación: 29/04/2026</p>
+        </footer>
+
+    </body>
+</html>

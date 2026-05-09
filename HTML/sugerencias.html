@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Incluyo meta charset para que se puedan visibilizar correctamente todos los símbolos, acentos, etc -->
+        <meta charset="UTF-8"> 
+        <title>TrotaMundos - Agencia de Viajes</title>
+        <link rel="stylesheet" type="text/css" href="../CSS/sugerencias.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <header>
+            <img id="logo" src="../imagenes/trotamundos.png"/>
+            <h1>TrotaMundos</h1>
+
+            <form id="iniciarSesion">
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" name="usuario" required/>
+                <label for="pwd">Contraseña</label>
+                <input type="password" id="pwd" name="pwd" required/>
+                <input type="submit" id="login" name="login" value="Login" required/>
+            </form>
+
+            <a id="altaUsuario" href="altausuarios.html"><strong>Alta usuario</strong></a>
+
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="viajes.html">Viajes</a>
+                <a href="viajes_grupo.html">Viajes grupales</a>
+                <a href="ofertas.html">Ofertas</a>
+                <a href="sobre_agencia.html">Sobre nosotros</a>
+                <a href="sugerencias.html">Sugerencias</a>
+            </nav>
+        </header>
+
+        <main>
+
+            <section id="seccionReseñas">
+                <section class="reseña">
+                    <h1>Reseñas de nuestros usuarios</h1>
+
+                    <article>
+                        <h2>Juan Pérez</h2>
+                        <p class="fechaReseña">15 mar. 2026</p>
+                        <h3>Gran agencia de viajes</h3>
+                        <p class="calificacion" data-rating="5"></p>
+                        <p>¡Excelente experiencia! El viaje fue increíble y el servicio de TrotaMundos fue impecable. Sin duda volveré a reservar con ellos.</p>
+                    </article>
+
+                    <article>
+                        <h2>María Gómez</h2>
+                        <p class="fechaReseña">20 mar. 2026</p>
+                        <h3>Muy recomendable</h3>
+                        <p class="calificacion" data-rating="4"></p>
+                        <p>Me encantó el viaje organizado por TrotaMundos. Todo estuvo bien planificado y el personal fue muy amable. Solo le doy 4 estrellas porque hubo un pequeño retraso en el transporte, pero en general fue una experiencia positiva.</p>
+                    </article>
+
+                    <article>
+                        <h2>Carlos Rodríguez</h2>
+                        <p class="fechaReseña">25 jun. 2025</p>
+                        <h3>Buena relación calidad-precio</h3>
+                        <p class="calificacion" data-rating="4"></p>
+                        <p>Reservé un viaje con TrotaMundos y quedé satisfecho con la relación calidad-precio. El alojamiento y las actividades fueron excelentes, aunque me hubiera gustado que incluyeran más opciones de comida en el paquete. Aun así, lo recomendaría a otros viajeros.</p>
+                    </article>
+
+                    <article>
+                        <h2>Laura Martínez</h2>
+                        <p class="fechaReseña">10 feb. 2026</p>
+                        <h3>Experiencia inolvidable</h3>
+                        <p class="calificacion" data-rating="5"></p>
+                        <p>Mi viaje con TrotaMundos fue simplemente inolvidable. Desde el momento de la reserva hasta el regreso, todo fue perfecto. El personal fue muy atento y se aseguraron de que cada detalle estuviera cuidado. Sin duda, volveré a elegir TrotaMundos para mis próximas aventuras.</p>
+                    </article>
+
+                    <article>
+                        <h2>Ana López</h2>
+                        <p class="fechaReseña">5 ene. 2026</p>
+                        <h3>Servicio al cliente excepcional</h3>
+                        <p class="calificacion" data-rating="5"></p>
+                        <p>Quedé impresionada con el servicio al cliente de TrotaMundos. Tuvieron una respuesta rápida a mis consultas y se aseguraron de que mi viaje fuera perfecto. El personal fue muy amable y profesional en todo momento. Sin duda, recomendaría esta agencia a cualquiera que busque una experiencia de viaje sin complicaciones.</p>
+                    </article>
+                </section>
+
+                <form action="" method="post" id="crearReseña">
+                    <p id="tituloFormularioReseña"><strong>Escribe una reseña</strong></p>
+                    <input id="usuario" type="text" name="usuario" placeholder="Usuario" required>
+                    <datalist id="calificacion" required>
+                        <option value="" disabled selected>Calificación</option>
+                        <option value="1">1 estrella</option>
+                        <option value="2">2 estrellas</option>
+                        <option value="3">3 estrellas</option>
+                        <option value="4">4 estrellas</option>
+                        <option value="5">5 estrellas</option>
+                    </datalist>
+                    <input id="tituloReseña" type="text" name="tituloReseña" placeholder="Indique el título de la reseña" required>
+                    <input id="fechaReseña" type="date" name="fechaReseña" required>
+                    <input id="reseña" name="reseña" type="text" placeholder="Escriba aquí la reseña" required>
+                    <input id="enviarReseña" type="submit" value="ENVIAR RESEÑA">
+                </form>
+            </section>
+           
+        </main>
+
+        <footer>
+            <p id="sobreNosotros">SOBRE NOSOTROS</p>
+            <a href="contacto.html">Contacto</a>
+            <br>
+            <a href="https://docs.google.com/document/d/1J6dwtbxbZyRSLV7A461OkP3R2SLclDsuH2891gszpWE/edit?usp=sharing">Desarrollo</a>
+            <br><br>
+            <hr>
+            <p id="copyright">© TrotaMundos</p>
+            <p id="ultimaModificacion">Última modificación: 29/04/2026</p>
+        </footer>
+
+    </body>
+</html>

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Incluyo meta charset para que se puedan visibilizar correctamente todos los símbolos, acentos, etc -->
+        <meta charset="UTF-8"> 
+        <title>TrotaMundos - Agencia de Viajes</title>
+        <link rel="stylesheet" type="text/css" href="../CSS/sobre_agencia.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <header>
+            <img id="logo" src="../imagenes/trotamundos.png"/>
+            <h1>TrotaMundos</h1>
+
+            <form id="iniciarSesion">
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" name="usuario" required/>
+                <label for="pwd">Contraseña</label>
+                <input type="password" id="pwd" name="pwd" required/>
+                <input type="submit" id="login" name="login" value="Login" required/>
+            </form>
+
+            <a id="altaUsuario" href="altausuarios.html"><strong>Alta usuario</strong></a>
+
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="viajes.html">Viajes</a>
+                <a href="viajes_grupo.html">Viajes grupales</a>
+                <a href="ofertas.html">Ofertas</a>
+                <a href="sobre_agencia.html">Sobre nosotros</a>
+                <a href="sugerencias.html">Sugerencias</a>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Con sandbox limito las acciones que puede realizar el contenido embebido, aumentando la seguridad.
+            Con referrerpolicy evito que el sitio embebido obtenga información del usuario -->
+            <iframe
+                width="100%"
+                height="500px"
+                src="https://www.google.com/maps/d/embed?mid=19VoghWOR306oxy7YKWD5Yk7rPg3BJ2k&hl=es&ehbc=2E312F"
+                title="Mapa de Agencia de viajes TrotaMundos" 
+                allowfullscreen 
+                referrerpolicy="no-referrer" 
+                sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
+            ></iframe>
+
+            <section class="agencias">
+                <h2>Nuestras agencias</h2>
+
+                <article class="ciudad">
+                    <details>
+                        <summary><strong>Granada</strong></summary>
+                        
+                        <article class="agencia">
+                        <h4>Agencia Trotamundos - Gran Vía de Colón</h4>
+                        <p>Gran Vía de Colón, 123, 18001 Granada, España</p>
+                        <a href="tel: 644 111 022">Teléfono: 644 111 022</a>
+                        <a href="mailto:trotamundospw@gmail.com">Email: trotamundospw@gmail.com</a>
+                        <h5>Viajes disponibles</h5>
+                        <ul>
+                            <li>Viaje a El Cairo - 12 al 19 de Octubre</li>
+                            <li>Viaje a Luxor - 8 al 15 de Octubre</li>
+                            <li>Viaje a Niza - 15 al 22 de Abril</li>
+                            <li>Viaje a París - 5 al 12 de Abril</li>
+                            <li>Viaje a Roma - 5 al 12 de Mayo</li>
+                            <li>Viaje a Oaxaca - 21 al 28 de Noviembre</li>
+                        </ul>
+                    </article> 
+
+                    <hr>
+
+                    <article class="agencia">
+                        <h4>Agencia Trotamundos - Av. de Dílar</h4>
+                        <p>Av. de Dílar, 124, 18001 Granada, España</p>
+                        <a href="tel: 644 111 023">Teléfono: 644 111 023</a>
+                        <a href="mailto:trotamundospw@gmail.com">Email: trotamundospw@gmail.com</a>
+                        <h5>Viajes disponibles</h5>
+                        <ul>
+                            <li>Viaje a Kioto - 20 al 27 de Abril</li>
+                            <li>Viaje a Bangkok - 5 al 12 de Marzo</li>
+                            <li>Viaje a Phuket - 3 al 10 de Junio</li>
+                            <li>Viaje a Atenas - 5 al 12 de Septiembre</li>
+                            <li>Viaje a Heraclión - 15 al 22 de Septiembre</li>
+                            <li>Viaje a São Paulo - 9 al 16 de Abril</li>
+                        </ul>
+                    </article>
+                    
+                    <hr>
+
+                    <article class="agencia">
+                        <h4>Agencia Trotamundos - Camino de Ronda</h4>
+                        <p>Camino de Ronda, 125, 18001 Granada, España</p>
+                        <a href="tel: 644 111 024">Teléfono: 644 111 024</a>
+                        <a href="mailto:trotamundospw@gmail.com">Email: trotamundospw@gmail.com</a>
+                        <h5>Viajes disponibles</h5>
+                        <ul>
+                            <li>Viaje a Malé - 14 al 21 de Febrero</li>
+                            <li>Viaje a Maafushi - 22 al 29 de Septiembre</li>
+                            <li>Viaje a Kandy - 24 al 31 de Marzo</li>
+                            <li>Viaje a Berlín - 5 al 12 de Junio</li>
+                            <li>Viaje a Múnich - 10 al 17 de Junio</li>
+                            <li>Viaje a Toronto - 12 al 19 de Enero</li>
+                        </ul>
+                    </article>
+
+                    </details>
+                </article>
+                
+                <article class="ciudad">
+                    <details>
+                        <summary><strong>Madrid</strong></summary>
+                        
+                        <article class="agencia">
+                        <h4>Agencia Trotamundos - Calle de Carretas</h4>
+                        <p>Calle de Carretas, 126, 28001 Madrid, España</p>
+                        <a href="tel: 644 111 025">Teléfono: 644 111 025</a>
+                        <a href="mailto:trotamundospw@gmail.com">Email: trotamundospw@gmail.com</a>
+                        <h5>Viajes disponibles</h5>
+                        <ul>
+                            <li>Viaje a Nueva York - 15 al 22 de Enero</li>
+                            <li>Viaje a Los Ángeles - 10 al 17 de Abril</li>
+                            <li>Viaje a Lyon - 10 al 17 de Abril</li>
+                            <li>Viaje a Burdeos - 8 al 15 de Abril</li>
+                            <li>Viaje a Oslo - 5 al 12 de Junio</li>
+                            <li>Viaje a Guangzhou - 3 al 10 de Julio</li>
+                        </ul>
+                    </article>  
+                    
+                    <hr>
+
+                    <article class="agencia">
+                        <h4>Agencia Trotamundos - Calle Alcalá</h4>
+                        <p>Calle Alcalá, 127, 28001 Madrid, España</p>
+                        <a href="tel: 644 111 026">Teléfono: 644 111 026</a>
+                        <a href="mailto:trotamundospw@gmail.com">Email: trotamundospw@gmail.com</a>
+                        <h5>Viajes disponibles</h5>
+                        <ul>
+                            <li>Viaje a Venecia - 15 al 22 de Mayo</li>
+                            <li>Viaje a Forencia - 10 al 17 de Mayo</li>
+                            <li>Viaje a Rodas - 12 al 19 de Septiembre</li>
+                            <li>Viaje a Ciudad de México - 7 al 14 de Febrero</li>
+                            <li>Viaje a Cancún - 10 al 17 de Agosto</li>
+                            <li>Viaje a Tokio - 8 al 15 de Marzo</li>
+                        </ul>
+                    </article>
+
+                    </details>
+                </article>
+
+                <article class="ciudad">
+                    <details>
+                        <summary><strong>Málaga</strong></summary>
+                        
+                        <article class="agencia">
+                            <h4>Agencia Trotamundos - Calle Liborio García</h4>
+                            <p>Calle Liborio García, 128, 29067 Málaga, España</p>
+                            <a href="tel: 644 111 027">Teléfono: 644 111 027</a>
+                            <a href="mailto:trotamundospw@gmail.com">Email: trotamundospw@gmail.com</a>
+                            <h5>Viajes disponibles</h5>
+                            <ul>
+                                <li>Viaje a Rio de Janeiro - 18 al 25 de Febrero</li>
+                                <li>Viaje a Salvador - 20 al 27 de Mayo</li>
+                                <li>Viaje a Buenos Aires - 10 al 17 de Marzo</li>
+                                <li>Viaje a Chiang Mai - 18 al 25 de Abril</li>
+                                <li>Viaje a Krabi - 20 al 27 de Septiembre</li>
+                                <li>Viaje a Hamburgo - 15 al 22 de Junio</li>
+                            </ul>
+                        </article>  
+
+                        <hr>
+
+                        <article class="agencia">
+                            <h4>Agencia Trotamundos - Paseo Marítimo Antonio Banderas</h4>
+                            <p>Paseo Marítimo Antonio Banderas, 129, 29067 Málaga, España</p>
+                            <a href="tel: 644 111 028">Teléfono: 644 111 028</a>
+                            <a href="mailto:trotamundospw@gmail.com">Email: trotamundospw@gmail.com</a>
+                            <h5>Viajes disponibles</h5>
+                            <ul>
+                                <li>Viaje a Alejandría - 25 de Septiembre al 2 de Octubre</li>
+                                <li>Viaje a Asuán - 20 al 27 de Septiembre</li>
+                                <li>Viaje a Nairobi - 5 al 12 de Octubre</li>
+                                <li>Viaje a Zanzíbar - 23 al 30 de Septiembre</li>
+                                <li>Viaje a Zúrich - 5 al 12 de Agosto</li>
+                                <li>Viaje a Lausana - 8 al 15 de Agosto</li>
+                            </ul>
+                        </article>
+                    </details>
+                </article>
+
+                <article class="ciudad">
+                    <details>
+                        <summary><strong>Zaragoza</strong></summary>
+                        
+                        <article class="agencia">
+                            <h4>Agencia Trotamundos - Calle Liborio García</h4>
+                            <p>Calle Liborio García, 130, 50006 Zaragoza, España</p>
+                            <a href="tel: 644 111 029">Teléfono: 644 111 029</a>
+                            <a href="mailto:trotamundospw@gmail.com">Email: trotamundospw@gmail.com</a>
+                            <h5>Viajes disponibles</h5>
+                            <ul>
+                                <li>Viaje a Marsella - 12 al 19 de Abril</li>
+                                <li>Viaje a París - 5 al 12 de Abril</li>
+                                <li>Viaje a Milán - 8 al 15 de Marzo</li>
+                                <li>Viaje a Tesalónica - 10 al 17 de Septiembre</li>
+                                <li>Viaje a Bergen - 10 al 17 de Julio</li>
+                                <li>Viaje a Hiroshima - 5 al 12 de Junio</li>
+                            </ul>
+                        </article>
+
+                    </details>
+                </article>
+                
+                <article class="ciudad">
+                    <details>
+                        <summary><strong>Valencia</strong></summary>
+                        
+                        <article class="agencia">
+                            <h4>Agencia Trotamundos - Cl. de Colón</h4>
+                            <p>Cl. de Colón, 131, 46004 Valencia, España</p>
+                            <a href="tel: 644 111 030">Teléfono: 644 111 030</a>
+                            <a href="mailto:trotamundospw@gmail.com">Email: trotamundospw@gmail.com</a>
+                            <h5>Viajes disponibles</h5>
+                            <ul>
+                                <li>Viaje a Guadalajara - 19 al 26 de Marzo</li>
+                                <li>Viaje a Monterrey - 8 al 15 de Mayo</li>
+                                <li>Viaje a Chicago - 5 al 12 de Junio</li>
+                                <li>Viaje a Miami - 18 al 25 de Agosto</li>
+                                <li>Viaje a Vancouver - 6 al 13 de Junio</li>
+                                <li>Viaje a Frankfurt - 12 al 19 de Junio</li>
+                            </ul>
+                        </article>
+
+                        <hr>
+
+                        <article class="agencia">
+                            <h4>Agencia Trotamundos - Calle de Guillem de Anglesola</h4>
+                            <p>Calle de Guillem de Anglesola, 132, 46004 Valencia, España</p>
+                            <a href="tel: 644 111 031">Teléfono: 644 111 031</a>
+                            <a href="mailto:trotamundospw@gmail.com">Email: trotamundospw@gmail.com</a>
+                            <h5>Viajes disponibles</h5>
+                            <ul>
+                                <li>Viaje a Hulhumale - 7 al 14 de Julio</li>
+                                <li>Viaje a Fuvahmulah - 18 al 25 de Mayo</li>
+                                <li>Viaje a Galle - 6 al 13 de Mayo</li>
+                                <li>Viaje a Pattaya - 15 al 22 de Julio</li>
+                                <li>Viaje a Patras - 8 al 15 de Septiembre</li>
+                                <li>Viaje a Atenas - 5 al 12 de Septiembre</li>
+                            </ul>
+                        </article>
+
+                        <hr>
+
+                        <article class="agencia">
+                            <h4>Agencia Trotamundos - C. de Cádiz</h4>
+                            <p>Cl. de Cádiz, 133, 46004 Valencia, España</p>
+                            <a href="tel: 644 111 032">Teléfono: 644 111 032</a>
+                            <a href="mailto:trotamundospw@gmail.com">Email: trotamundospw@gmail.com</a>
+                            <h5>Viajes disponibles</h5>
+                            <ul>
+                                <li>Viaje a Niza - 15 al 22 de Abril</li>
+                                <li>Viaje a París - 5 al 12 de Abril</li>
+                                <li>Viaje a Venecia - 15 al 22 de Mayo</li>
+                                <li>Viaje a Basilea - 8 al 15 de Agosto</li>
+                                <li>Viaje a Stavanger - 8 al 15 de Julio</li>
+                                <li>Viaje a Trondheim - 12 al 19 de Julio</li>
+                            </ul>
+                        </article>
+
+                    </details>
+                </article>
+                
+                <article class="ciudad">
+                    <details>
+                        <summary><strong>Barcelona</strong></summary>
+                        
+                        <article class="agencia">
+                            <h4>Agencia Trotamundos - La Rambla</h4>
+                            <p>La Rambla, 134, 08002 Barcelona, España</p>
+                            <a href="tel: 644 111 033">Teléfono: 644 111 033</a>
+                            <a href="mailto:trotamundospw@gmail.com">Email: trotamundospw@gmail.com</a>
+                            <h5>Viajes disponibles</h5>
+                            <ul>
+                                <li>Viaje a Pekín - 12 al 19 de Marzo</li>
+                                <li>Viaje a Shanghái - 22 al 29 de Abril</li>
+                                <li>Viaje a Sapporo - 10 al 17 de Enero</li>
+                                <li>Viaje a Phuket - 3 al 10 de Junio</li>
+                                <li>Viaje a Bangkok - 5 al 12 de Marzo</li>
+                                <li>Viaje a Sídney - 3 al 10 de Noviembre</li>
+                            </ul>
+                        </article>
+
+                        <hr>
+
+                        <article class="agencia">
+                            <h4>Agencia Trotamundos - Carrer de València</h4>
+                            <p>Carrer de València, 135, 08002 Barcelona, España</p>
+                            <a href="tel: 644 111 034">Teléfono: 644 111 034</a>
+                            <a href="mailto:trotamundospw@gmail.com">Email: trotamundospw@gmail.com</a>
+                            <h5>Viajes disponibles</h5>
+                            <ul>
+                                <li>Viaje a San Francisco - 20 al 27 de Octubre</li>
+                                <li>Viaje a Los Ángeles - 10 al 17 de Abril</li>
+                                <li>Viaje a Montreal - 18 al 25 de Septiembre</li>
+                                <li>Viaje a Monterrey - 8 al 15 de Mayo</li>
+                                <li>Viaje a Brasilia - 3 al 10 de Julio</li>
+                                <li>Viaje a Florianópolis - 15 al 22 de Diciembre</li>
+                            </ul>
+                        </article>
+
+                    </details>
+                </article>
+
+                <article class="ciudad">
+                    <details>
+                        <summary><strong>Sevilla</strong></summary>
+                        
+                        <article class="agencia">
+                            <h4>Agencia Trotamundos - C.Sierpes</h4>
+                            <p>C.Sierpes, 136, 41004 Sevilla, España</p>
+                            <a href="tel: 644 111 035">Teléfono: 644 111 035</a>
+                            <a href="mailto:trotamundospw@gmail.com">Email: trotamundospw@gmail.com</a>
+                            <h5>Viajes disponibles</h5>
+                            <ul>
+                                <li>Viaje a Sharm El-Sheikh - 15 al 22 de Octubre</li>
+                                <li>Viaje a El Cairo - 12 al 19 de Octubre</li>
+                                <li>Viaje a Mombasa - 18 al 25 de Septiembre</li>
+                                <li>Viaje a Mwanza - 14 al 21 de Septiembre</li>
+                                <li>Viaje a Atenas - 5 al 12 de Septiembre</li>
+                                <li>Viaje a Rodas - 12 al 19 de Septiembre</li>
+                            </ul>
+                        </article>
+                        
+                        <hr>
+
+                        <article class="agencia">
+                            <h4>Agencia Trotamundos - C.Manuel Casana</h4>
+                            <p>C.Manuel Casana, 137, 41004 Sevilla, España</p>
+                            <a href="tel: 644 111 036">Teléfono: 644 111 036</a>
+                            <a href="mailto:trotamundospw@gmail.com">Email: trotamundospw@gmail.com</a>
+                            <h5>Viajes disponibles</h5>
+                            <ul>
+                                <li>Viaje a Lyon - 10 al 17 de Abril</li>
+                                <li>Viaje a Marsella - 12 al 19 de Abril</li>
+                                <li>Viaje a Milán - 8 al 15 de Mayo</li>
+                                <li>Viaje a Colonia - 8 al 15 de Junio</li>
+                                <li>Viaje a Ginebra - 10 al 17 de Agosto</li>
+                                <li>Viaje a Lucerna - 15 al 22 de Agosto</li>
+                            </ul>
+                        </article>
+
+                        <hr>
+
+                        <article class="agencia">
+                            <h4>Agencia Trotamundos - C.San Jacinto</h4>
+                            <p>C.San Jacinto, 138, 41004 Sevilla, España</p>
+                            <a href="tel: 644 111 037">Teléfono: 644 111 037</a>
+                            <a href="mailto:trotamundospw@gmail.com">Email: trotamundospw@gmail.com</a>
+                            <h5>Viajes disponibles</h5>
+                            <ul>
+                                <li>Viaje a Osaka - 12 al 19 de Mayo</li>
+                                <li>Viaje a Tokio - 8 al 15 de Marzo</li>
+                                <li>Viaje a Chengdu - 15 al 22 de Septiembre</li>
+                                <li>Viaje a Taipéi - 10 al 17 de Abril</li>
+                                <li>Viaje a Krabi - 20 al 27 de Septiembre</li>
+                                <li>Viaje a Phuket - 3 al 10 de Junio</li>
+                            </ul>
+                        </article>
+                        
+                    </details>
+                </article>
+
+                <article class="ciudad">
+                    <details>
+                        <summary><strong>Las Palmas de Gran Canaria</strong></summary>
+                        
+                        <article class="agencia">
+                            <h4>Agencia Trotamundos - C.Munguía</h4>
+                            <p>C.Munguía, 139, 35016 Las Palmas de Gran Canaria, España</p>
+                            <a href="tel: 644 111 038">Teléfono: 644 111 038</a>
+                            <a href="mailto:trotamundospw@gmail.com">Email: trotamundospw@gmail.com</a>
+                            <h5>Viajes disponibles</h5>
+                            <ul>
+                                <li>Viaje a Melbourne - 15 al 22 de Octubre</li>
+                                <li>Viaje a Brisbane - 28 de Octubre al 4 de Noviembre</li>
+                                <li>Viaje a Auckland - 5 al 12 de Noviembre</li>
+                                <li>Viaje a Suva - 12 al 19 de Marzo</li>
+                                <li>Viaje a Hiroshima - 5 al 12 de Junio</li>
+                                <li>Viaje a Osaka - 12 al 19 de Mayo</li>
+                            </ul>
+                        </article>
+                        
+                        <hr>
+
+                        <article class="agencia">
+                            <h4>Agencia Trotamundos - C.Alfredo L Jones</h4>
+                            <p>C.Alfredo L Jones, 140, 35016 Las Palmas de Gran Canaria, España</p>
+                            <a href="tel: 644 111 039">Teléfono: 644 111 039</a>
+                            <a href="mailto:trotamundospw@gmail.com">Email: trotamundospw@gmail.com</a>
+                            <h5>Viajes disponibles</h5>
+                            <ul>
+                                <li>Viaje a Cancún - 10 al 17 de Agosto</li>
+                                <li>Viaje a Guadalajara - 19 al 26 de Marzo</li>
+                                <li>Viaje a São Paulo - 9 al 16 de Brasil</li>
+                                <li>Viaje a Córdoba - 22 al 29 de Abril</li>
+                                <li>Viaje a Miami - 18 al 25 de Agosto</li>
+                                <li>Viaje a Chicago - 5 al 12 de Junio</li>
+                            </ul>
+                        </article>
+                        
+                    </details>
+                </article>
+
+                <article class="ciudad">
+                    <details>
+                        <summary><strong>Santiago de Compostela</strong></summary>
+                        
+                        <article class="agencia">
+                            <h4>Agencia Trotamundos - Rúa de Hórreo</h4>
+                            <p>Rúa de Hórreo, 141, 15701 Santiago de Compostela, España</p>
+                            <a href="tel: 644 111 040">Teléfono: 644 111 040</a>
+                            <a href="mailto:trotamundospw@gmail.com">Email: trotamundospw@gmail.com</a>
+                            <h5>Viajes disponibles</h5>
+                            <ul>
+                                <li>Viaje a Tromsø - 15 al 22 de Junio</li>
+                                <li>Viaje a Oslo - 5 al 12 de Julio</li>
+                                <li>Viaje a Zúrich - 5 al 12 de Agosto</li>
+                                <li>Viaje a Frankfurt - 12 al 19 de Junio</li>
+                                <li>Viaje a París - 5 al 12 de Abril</li>
+                                <li>Viaje a Nápoles - 12 al 19 de Mayo</li>
+                            </ul>
+                        </article>
+                        
+                    </details>
+                </article>
+
+                <article class="ciudad">
+                    <details>
+                        <summary><strong>Albacete</strong></summary>
+                        
+                        <article class="agencia">
+                            <h4>Agencia Trotamundos - C.Virgen de las Maravillas</h4>
+                            <p>C.Virgen de las Maravillas, 142, 02005 Albacete, España</p>
+                            <a href="tel: 644 111 041">Teléfono: 644 111 041</a>
+                            <a href="mailto:trotamundospw@gmail.com">Email: trotamundospw@gmail.com</a>
+                            <h5>Viajes disponibles</h5>
+                            <ul>
+                                <li>Viaje a Nakuru - 22 al 29 de Septiembre</li>
+                                <li>Viaje a Adelaida - 20 al 27 de Octubre</li>
+                                <li>Viaje a Perth - 10 al 17 de Noviembre</li>
+                                <li>Viaje a Dunedin - 12 al 19 de Noviembre</li>
+                                <li>Viaje a Hamilton - 22 al 29 de Octubre</li>
+                                <li>Viaje a Hamburgo - 15 al 22 de Junio</li>
+                            </ul>
+                        </article>
+                        
+                    </details>
+                </article>
+
+            </section>
+        </main>
+
+        <footer>
+            <p id="sobreNosotros">SOBRE NOSOTROS</p>
+            <a href="contacto.html">Contacto</a>
+            <br>
+            <a href="https://docs.google.com/document/d/1J6dwtbxbZyRSLV7A461OkP3R2SLclDsuH2891gszpWE/edit?usp=sharing">Desarrollo</a>
+            <br><br>
+            <hr>
+            <p id="copyright">© TrotaMundos</p>
+            <p id="ultimaModificacion">Última modificación: 29/04/2026</p>
+        </footer>
+
+    </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Incluyo meta charset para que se puedan visibilizar correctamente todos los símbolos, acentos, etc -->
+        <meta charset="UTF-8"> 
+        <title>TrotaMundos - Agencia de Viajes</title>
+        <link rel="stylesheet" type="text/css" href="../CSS/index.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <header>
+            <img id="logo" src="../imagenes/trotamundos.png"/>
+            <h1>TrotaMundos</h1>
+
+            <form id="iniciarSesion">
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" name="usuario" required/>
+                <label for="pwd">Contraseña</label>
+                <input type="password" id="pwd" name="pwd" required/>
+                <input type="submit" id="login" name="login" value="Login" required/>
+            </form>
+
+            <a id="altaUsuario" href="altausuarios.html"><strong>Alta usuario</strong></a>
+
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="viajes.html">Viajes</a>
+                <a href="viajes_grupo.html">Viajes grupales</a>
+                <a href="ofertas.html">Ofertas</a>
+                <a href="sobre_agencia.html">Sobre nuestra agencia</a>
+                <a href="sugerencias.html">Sugerencias</a>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Uso un contenedor para poder posicionar el h1 encima de la imagen, ya que un 
+            h1 no se puede meter dentro de un img -->
+            <div id="imagenConNombre">
+                <img id="imagenSitio" src="../imagenes/capri.jpg"/>
+                
+                <h1 id="nombreAgencia">TrotaMundos</h1>
+                
+                <span id="textoAgencia1">Organizamos tus viajes de principio a fin</span>
+                <span id="separador1">|</span>
+                <span id="textoAgencia2">Viaja y reserva de forma segura</span>
+                <span id="separador2">|</span>
+                <span id="textoAgencia3">+20 agencias a tu dispoción</span>
+                
+                <!-- Uso como método get para simular que el usuario ha buscado el destino. Así, en a URL saldrá lo que el usuario
+                ha introducido en Destino, Origen, Fecha de salida y Fecha de entrada -->
+                <form id="buscarDestino" action="viajes.html" method="get">
+                    <label for="destino">Destino
+                        <input type="search" id="destino" name="destino" placeholder="Selecciona el destino" required/>
+                    </label>
+                    <label for="Origen">Origen
+                        <input type="search" id="origen" name="origen" placeholder="Selecciona el origen" required/>
+                    </label>
+                    <label for="fechaEntrada">Fecha de entrada
+                        <input type="date" id="fechaEntrada" name="fechaEntrada" required/>
+                    </label>
+                    <label for="fechaSalida">Fecha de salida
+                        <input type="date" id="fechaSalida" name="fechaSalida" required/>
+                    </label>
+                    <button type="submit" id="enviarDestino" name="enviarDestino">Buscar Destino</button>
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <p id="sobreNosotros">SOBRE NOSOTROS</p>
+            <a href="contacto.html">Contacto</a>
+            <br>
+            <a href="https://docs.google.com/document/d/1J6dwtbxbZyRSLV7A461OkP3R2SLclDsuH2891gszpWE/edit?usp=sharing">Desarrollo</a>
+            <br><br>
+            <hr>
+            <p id="copyright">© TrotaMundos</p>
+            <p id="ultimaModificacion">Última modificación: 29/04/2026</p>
+        </footer>
+
+    </body>
+</html>

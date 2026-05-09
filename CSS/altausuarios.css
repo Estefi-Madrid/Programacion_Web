@@ -1,0 +1,403 @@
+/* ESTILO HTML */
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+}
+
+/* ESTILO BODY */
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+nav {
+    /* Obligo al nav a que ocupe todo el ancho para que flex-wrap pueda bajarlo a la siguiente línea cuando los elementos 
+    no caben en estas */
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+}
+
+nav a {    
+    transition: background-color 0.3s, box-shadow 0.3s;
+    background-color: transparent;
+}
+
+nav a:hover {
+    /* 0: desplazamiento horizontal (offset-x)
+    10px: desplazamiento vertical (offset-y)
+    20px: desenfoque
+    rgba(0,0,0,0.2) → color de la sombra
+    (0,0,0) = negro.
+    0.2 = transparencia del 20%. */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+/* ESTILO BODY: Cabecera */
+header {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    /* Uso flex-wrap para permitir que el menú de navegación baje a la siguiente línea */
+    flex-wrap: wrap; 
+}
+
+#altaUsuario, #login {
+    display: inline-block;              /* Para poder darle padding */
+    padding: 8px 15px;                  /* Espacio dentro del “botón” */
+    background-color: #556B2F;      
+    color: white;               
+    text-decoration: none;              /* Quita subrayado */
+    border-radius: 15px;                /* Esquinas redondeadas */
+    font-weight: none;
+    border: none;                       /* Para quitar el borde negro del botón de login */
+    font-size: 16px;
+    align-items: center;
+}
+
+#altaUsuario {
+    margin-left: 10px;
+}
+
+#iniciarSesion {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 10px;
+}
+
+#usuario, #pwd {
+    border-radius: 15px;
+}
+
+#logo {
+    width: 200px;
+}
+
+/* ESTILO BODY:  Main*/
+
+main {
+    background-color: white;
+    border-radius: 16px;
+    border: grey solid 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: 50px;
+}
+
+#fotoConTexto {
+    margin: 0px;
+    position: relative;
+    flex: 1;
+    line-height: 2.0;
+}
+
+#fotoConTexto img {
+    width: 100%;
+    display: block;
+    border-radius: 16px;
+    filter: brightness(0.4);            /* Oscurezco un poco la imagen para leer mejor el texto */
+}
+
+.infoSuperpuesta {
+    position: absolute;
+    top: 50%;                                     /* Lo muevo al centro vertical */
+    left: 50%;                                    /* Lo muevo al centro horizontal */
+    transform: translate(-50%, -50%);             /* Ajuste para centrarlo exacto */
+    color: white;                   
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);   /* Sombra para legibilidad */
+    width: 85%;
+    text-align: center;
+}
+
+.infoSuperpuesta h2 {
+    border-bottom: 5px solid white;
+    padding-bottom: 8px;
+    align-self: center;
+}
+
+.areaRegistro {
+    flex: 1;
+    max-width: 500px;
+    border-radius: 16px;
+    padding-left: 50px;
+    padding-right: 50px;
+    align-items: center;
+    border-color: grey;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.areaRegistro input, .areaRegistro select {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    border: 1px solid grey;
+    padding: 10px;
+}
+
+.carrusel {
+    position: relative;
+    height: 450px;              /* Altura fija para que la foto no se mueva */
+    overflow: hidden;
+    display: block;             /* Cambio el flex por bloque para el carrusel */
+}
+
+.paso {
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: none;              /* Oculto todos por defecto */
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Con :checked indico que se seleccione el input radio cuando se haga click en él.
+Con '~' busco un elemento que esté al mismo nivel, es decir, sea hermano, y aparezca después
+en el documento HTML.
+Si el input radio está marcado, cambio el display a none del fieldset a display:flex para hacerlo visible.*/
+#pasarAPaso1:checked ~ #paso1, #pasarAPaso2:checked ~ #paso2, #pasarAPaso3:checked ~ #paso3 {
+    display: flex;
+}
+
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #adc484;
+    color: white;
+    border-radius: 16px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 20%;
+}
+
+/* Solo muestro el paso activo */
+.paso.activo {
+    display: flex;
+}
+
+.opcionesRecibirCorreo {
+    display: flex;
+    flex-direction: row;    /* Alineación horizontal */
+    justify-content: center;
+    gap: 30px;              /* Espacio entre "Sí" y "No" */
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.radioInline {
+    display: flex;
+    align-items: center;    /* Centro verticalmente el círculo con el texto */
+    gap: 8px;               /* Espacio entre el círculo y el texto del label */
+    cursor: pointer;
+}
+
+/* Ajuste para que los radio buttons no intenten medir 100% de ancho ya que hereda de .areaRegistro input */
+.areaRegistro input[type="radio"] {
+    width: auto;            
+    margin: 0;
+}
+
+/*Estilo base del select */
+.areaRegistro select {
+    font-family: inherit; /* Hereda la fuente del html */
+    font-size: 14px;
+}
+
+/* Color cuando NO se ha seleccionado nada porque quiero simular el placeholder del input para que quede toda la estética igual */
+.areaRegistro select:invalid {
+    color: grey; 
+    text-transform: uppercase;
+}
+
+/* Para que las opciones de la lista se vean en negro */
+.areaRegistro select option {
+    color: black;
+    text-transform: none;
+}
+
+.areaRegistro h2 {
+    text-align: center;
+    border-left: 4px solid #556B2F;
+    padding-left: 15px;
+    margin: 20px auto;
+}
+
+.areaRegistro #registrar {
+    width: 100%;
+    max-width: 400px;
+    padding: 8px 15px;                  /* Espacio dentro del botón */
+    background-color: #556B2F;      
+    color: white;               
+    text-decoration: none;              /* Quita subrayado */
+    border-radius: 15px;                /* Esquinas redondeadas */
+    border: none;                       /* Para quitar el borde negro del botón */
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* He usado el has para diferenciar el main de altausuarios con dadoAltaExito para poder reutilizar el CSS, ya que el main de
+dadoAltaExito es muy pequeño y no merece la pena duplicar el CSS. Así, si el main contiene el id registroExitoso podré quitar el borde
+que usaba para dar estilo al registro de usuarios */
+main:has(#registroExitoso) {
+    border: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    padding: 40px;
+    width: 100%; 
+}
+
+#registroExitoso img {
+    width: 10%;
+}
+
+/* ESTILO FOOTER */
+footer {
+    background-color: #556B2F;
+    width: auto;
+    padding: 10px;
+}
+
+footer p, footer a {
+    margin-left: 20px;
+}
+
+footer p {
+    font-weight: bold;
+}
+
+footer a:link {
+    font-weight: normal;
+}
+
+#copyright, #ultimaModificacion {
+    font-weight: normal;
+    text-align: center;
+}
+
+#sobreNosotros {
+    border-bottom: 3px solid white;
+    padding-bottom: 5px;
+    width: 150px;
+}
+
+/* LINKS */
+a:link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-right: 40px;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+/* RESPONSIVE DESIGN */
+/* Para móvil he puesto un máximo de 768px */
+@media (max-width: 768px) {
+
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 5px;
+    }
+
+    #logo {
+        width: 80px;
+        order: 1;
+        padding-bottom: 10px;
+    }
+
+    header > h1 {
+        font-size: 1.1rem;
+        margin: 0px;
+        order: 2;
+        margin: 0px 0px 0px 10px;
+        flex-shrink: 1;
+    }
+
+    #iniciarSesion {
+        order: 3;
+        margin-left: auto;
+        gap: 3px;
+    }
+
+    #iniciarSesion label {
+        font-size: 0.8rem;
+    }
+
+    #usuario, #pwd {
+        width: 60px;  
+    }
+
+    #login {
+        font-size: 0.7rem;
+        padding: 4px 8px;
+    }
+
+    #altaUsuario {
+        order: 3;
+        margin-left: 5px;
+        padding: 4px 8px;
+        font-size: 0.7rem;
+        white-space: nowrap;
+    }
+
+    nav {
+        width: 100%;              /* El nav ocupa toda la línea y baja solo */
+        order: 99;
+    }
+
+    nav a {
+        margin-right: 6px !important;
+        font-size: 0.8rem;
+    } 
+
+    a:link {
+        margin-right: 6px;
+    }
+
+    .infoSuperpuesta {
+        font-size: 0.70rem;
+    }
+
+    #fotoConTexto {
+        margin: 0px;
+        position: relative;
+        flex: 1;
+        display: flex;
+    }
+
+    #fotoConTexto img {
+        width: 100%;
+        object-fit: cover;     
+        display: block;
+    }
+
+    .areaRegistro{
+        font-size: 0.9rem;    
+        align-content: center;
+    }
+
+    main {
+        margin: 20px;
+        align-items: stretch;   
+        min-height: 450px; 
+        display: flex;
+    }
+
+    main:has(#registroExitoso) {
+        width: 80% 
+    }
+}

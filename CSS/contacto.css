@@ -1,0 +1,290 @@
+/* ESTILO HTML */
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+}
+
+/* ESTILO BODY */
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+nav {
+    /* Obligo al nav a que ocupe todo el ancho para que flex-wrap pueda bajarlo a la siguiente línea cuando los elementos 
+    no caben en estas */
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+}
+
+nav a {    
+    transition: background-color 0.3s, box-shadow 0.3s;
+    background-color: transparent;
+}
+
+nav a:hover {
+    /* 0: desplazamiento horizontal (offset-x)
+    10px: desplazamiento vertical (offset-y)
+    20px: desenfoque
+    rgba(0,0,0,0.2) → color de la sombra
+    (0,0,0) = negro.
+    0.2 = transparencia del 20%. */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+main {
+    margin-bottom: 50px;
+}
+
+/* ESTILO BODY: Cabecera */
+header {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    /* Uso flex-wrap para permitir que el menú de navegación baje a la siguiente línea */
+    flex-wrap: wrap; 
+}
+
+#altaUsuario, #login {
+    display: inline-block;              /* Para poder darle padding */
+    padding: 8px 15px;                  /* Espacio dentro del “botón” */
+    background-color: #556B2F;      
+    color: white;               
+    text-decoration: none;              /* Quita subrayado */
+    border-radius: 15px;                /* Esquinas redondeadas */
+    font-weight: none;
+    border: none;                       /* Para quitar el borde negro del botón de login */
+    font-size: 16px;
+    align-items: center;
+}
+
+#altaUsuario {
+    margin-left: 10px;
+}
+
+#iniciarSesion {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 10px;
+}
+
+#usuario, #pwd {
+    border-radius: 15px;
+}
+
+#logo {
+    width: 200px;
+}
+
+/* ESTILO BODY: Main - Información Cliente */
+#atencionCliente {
+    width: 100%;
+    display: block;         /* Elimina un pequeño espacio que suelen dejar las imágenes */
+    height: 300px;
+    object-fit: cover;      /* Con esta propiedad recorto la foto sin deformarla para que adapte el tamaño de un banner */
+    margin-bottom: 20px;
+}
+
+#textoCliente0, #textoCliente1, #textoCliente2, #textoCliente3 {
+    text-align: justify;
+    max-width: 800px;       /* Evito que las líneas sean demasiado largas y cansen la vista */
+    line-height: 1.6;       /* Aumento el interlineado para que sea más legible */
+    padding: 0 20px;        /* Margen interno para que en móviles no pegue a los bordes */
+    color: #333;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#textoCliente0 {
+    text-align: center;
+}
+
+/* ESTILO BODY: Main - Formulario Contacto */
+#ponerseEnContacto {
+    border-radius: 15px;
+    top: 280px;
+    padding: 50px;
+    width: auto;
+    gap: 40px;
+    display: flex;
+    left: 250px;
+    flex-direction: column;
+    align-items: center;
+    border-color: grey;
+}
+
+#tituloFormulario {
+    font-size: 20px;
+    border-left: 3px solid #556B2F;
+    padding-left: 15px;
+    margin: 20px auto;
+    max-width: 200px;
+    height: 40px;
+}
+
+#nombre, #apellidos, #tel, #asunto, #mensaje {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    border: 1px solid grey;
+    padding: 10px;
+}
+
+#mensaje {
+    height: 80px;
+}
+
+#enviarMensaje {
+    width: 100%;
+    max-width: 400px;
+    padding: 8px 15px;                  /* Espacio dentro del botón */
+    background-color: #556B2F;      
+    color: white;               
+    text-decoration: none;              /* Quita subrayado */
+    border-radius: 15px;                /* Esquinas redondeadas */
+    border: none;                       /* Para quitar el borde negro del botón */
+    font-size: 16px;
+}
+
+/* ESTILO BODY: Main - Información Contacto */
+
+#llamar {
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 0.5;
+}
+
+#telefono {
+    font-size: 16px;
+}
+
+#horario {
+    font-size: 10px;
+}
+
+#llamanos, #telefono, #diasHorario, #horasHorario, #contactoDesarrollador {
+    text-align: justify;
+    margin-left: 50px;
+    line-height: 0.5;
+}
+
+/* ESTILO BODY: Main - Contacto Desarrollador */
+
+#contactoDesarrollador a {
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+/* ESTILO FOOTER */
+footer {
+    background-color: #556B2F;
+    width: auto;
+    padding: 10px;
+}
+
+footer p, footer a {
+    margin-left: 20px;
+}
+
+footer p {
+    font-weight: bold;
+}
+
+footer a:link {
+    font-weight: normal;
+}
+
+#copyright, #ultimaModificacion {
+    font-weight: normal;
+    text-align: center;
+}
+
+#sobreNosotros {
+    border-bottom: 3px solid white;
+    padding-bottom: 5px;
+    width: 150px;
+}
+
+/* LINKS */
+a:link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-right: 40px;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+/* RESPONSIVE DESIGN */
+/* Para móvil he puesto un máximo de 768px */
+@media (max-width: 768px) {
+
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 5px;
+    }
+
+    #logo {
+        width: 80px;
+        order: 1;
+        padding-bottom: 10px;
+    }
+
+    header > h1 {
+        font-size: 1.1rem;
+        margin: 0px;
+        order: 2;
+        margin: 0px 0px 0px 10px;
+        flex-shrink: 1;
+    }
+
+    #iniciarSesion {
+        order: 3;
+        margin-left: auto;
+        gap: 3px;
+    }
+
+    #iniciarSesion label {
+        font-size: 0.8rem;
+    }
+
+    #usuario, #pwd {
+        width: 60px;  
+    }
+
+    #login {
+        font-size: 0.7rem;
+        padding: 4px 8px;
+    }
+
+    #altaUsuario {
+        order: 3;
+        margin-left: 5px;
+        padding: 4px 8px;
+        font-size: 0.7rem;
+        white-space: nowrap;
+    }
+
+    nav {
+        width: 100%;              /* El nav ocupa toda la línea y baja solo */
+        order: 99;
+    }
+
+    nav a {
+        margin-right: 6px !important;
+        font-size: 0.8rem;
+    } 
+
+    a:link {
+        margin-right: 6px;
+    }
+}

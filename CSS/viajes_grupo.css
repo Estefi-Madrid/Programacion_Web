@@ -1,0 +1,282 @@
+/* ESTILO HTML */
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+}
+
+/* LINKS */
+nav a:link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-right: 40px;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+/* ESTILO BODY */
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+nav {
+    /* Obligo al nav a que ocupe todo el ancho para que flex-wrap pueda bajarlo a la siguiente línea cuando los elementos 
+    no caben en estas */
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+}
+
+nav a {    
+    transition: background-color 0.3s, box-shadow 0.3s;
+    background-color: transparent;
+}
+
+nav a:hover {
+    /* 0: desplazamiento horizontal (offset-x)
+    10px: desplazamiento vertical (offset-y)
+    20px: desenfoque
+    rgba(0,0,0,0.2) → color de la sombra
+    (0,0,0) = negro.
+    0.2 = transparencia del 20%. */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+/* ESTILO BODY: Cabecera */
+header {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    /* Uso flex-wrap para permitir que el menú de navegación baje a la siguiente línea */
+    flex-wrap: wrap; 
+}
+
+#altaUsuario, #login {
+    display: inline-block;              /* Para poder darle padding */
+    padding: 8px 15px;                  /* Espacio dentro del “botón” */
+    background-color: #556B2F;      
+    color: white;               
+    text-decoration: none;              /* Quita subrayado */
+    border-radius: 15px;                /* Esquinas redondeadas */
+    font-weight: none;
+    border: none;                       /* Para quitar el borde negro del botón de login */
+    font-size: 16px;
+    align-items: center;
+}
+
+#altaUsuario {
+    margin-left: 10px;
+}
+
+#iniciarSesion {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 10px;
+}
+
+#usuario, #pwd {
+    border-radius: 15px;
+}
+
+#logo {
+    width: 200px;
+}
+
+/* ESTILO BODY: Main */
+#viajeGrupal {
+    width: 100%;
+    display: block;         /* Elimina un pequeño espacio que suelen dejar las imágenes */
+    height: 250px;
+    object-fit: cover;      /* Con esta propiedad recorto la foto sin deformarla para que adapte el tamaño de un banner */
+    margin-bottom: 20px;
+}
+
+#introduccionGrupos {
+    max-width: 800px;
+    text-align: justify;
+    justify-items: center;
+    line-height: 1.6;
+    margin: auto;
+    padding: 0 20px;        /* Margen interno para que en móviles no pegue a los bordes */
+}
+
+#introduccionGrupos h2 {
+    border-bottom: #556B2F solid 2px;
+    border-width: auto;
+    padding-bottom: 10px;
+}
+
+.viajes {
+    display: grid;
+    grid-auto-rows: auto;                       /* Altura para las filas */
+    grid-template-columns: repeat(3, 1fr);      /* Para poner 3 viajes por fila */
+    gap: 40px;                                  /* Espacio entre artículos */
+    flex: 1;                                    /* Hace que ocupe el espacio disponible, ajustándose al tamaño de pantalla */
+    margin: 50px;
+    justify-items: center;
+}
+
+.viajes article {
+    display: flex;
+    overflow: hidden;                           /* Para recortar la imagen bien en los bordes */
+    flex-direction: column;                     /* Coloco imagen arriba y texto debajo */
+    border-radius: 16px;
+    background-color: #eeeeee;
+    border: 2px solid #ccc;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 370px;
+}
+
+.viajes article p, .viajes article h3 {
+    text-align: justify;
+    padding: 0px 20px 10px 20px;
+}
+
+.viajes article:hover {
+    transform: translateY(-10px);               /* Se “levanta” 10px */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);  /* Añado sombra */
+}
+
+.viajes a img {
+    display: block;                             /* Quita el pequeño espacio inferior que dejan las imágenes inline */
+    width: 100%;                                /* Ocupa todo el ancho del article */
+    height: 150px;                              /* Altura del banner */
+    object-fit: cover;                          /* Recorta la imagen si no tiene el mismo ratio que el contenedor */
+    margin-bottom: 5px;
+}
+
+.viajes p, .viajes h3 {
+    margin: 0px;
+    color: black;
+    padding-left: 10px;
+}
+
+.viajes #separadorCentro {
+    border-top: #556B2F solid 2px;
+    width: 50%;
+    margin: 8px auto;                           /* 8 de margen arriba y auto para margen abajo */
+}
+
+/* ESTILO FOOTER */
+footer {
+    background-color: #556B2F;
+    width: auto;
+    padding: 10px;
+}
+
+footer p, footer a {
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+footer p {
+    font-weight: bold;
+}
+
+footer a:link {
+    font-weight: normal;
+}
+
+#copyright, #ultimaModificacion {
+    font-weight: normal;
+    text-align: center;
+}
+
+#sobreNosotros {
+    border-bottom: 3px solid white;
+    padding-bottom: 5px;
+    width: 150px;
+}
+
+/* RESPONSIVE DESIGN */
+/* Para móvil he puesto un máximo de 768px */
+@media (max-width: 768px) {
+
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 5px;
+    }
+
+    #logo {
+        width: 80px;
+        order: 1;
+        padding-bottom: 10px;
+    }
+
+    header > h1 {
+        font-size: 1.1rem;
+        margin: 0px;
+        order: 2;
+        margin: 0px 0px 0px 10px;
+        flex-shrink: 1;
+    }
+
+    #iniciarSesion {
+        order: 3;
+        margin-left: auto;
+        gap: 3px;
+    }
+
+    #iniciarSesion label {
+        font-size: 0.8rem;
+    }
+
+    #usuario, #pwd {
+        width: 60px;  
+    }
+
+    #login {
+        font-size: 0.7rem;
+        padding: 4px 8px;
+    }
+
+    #altaUsuario {
+        order: 3;
+        margin-left: 5px;
+        padding: 4px 8px;
+        font-size: 0.7rem;
+        white-space: nowrap;
+    }
+
+    nav {
+        width: 100%;              /* El nav ocupa toda la línea y baja solo */
+        order: 99;
+    }
+
+    nav a {
+        margin-right: 6px !important;
+        font-size: 0.8rem;
+    } 
+
+    a:link {
+        margin-right: 6px;
+    }
+
+    .viajes {
+        grid-template-columns: 2fr;  
+    }
+
+    .viajes article {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .viajes article a {
+        display: block; 
+        width: 100%;
+    }
+
+    .viajes a img {
+        width: 100%;
+        display: block;
+        margin-bottom: 0; 
+    }
+}

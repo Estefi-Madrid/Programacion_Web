@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Incluyo meta charset para que se puedan visibilizar correctamente todos los símbolos, acentos, etc -->
+        <meta charset="UTF-8"> 
+        <title>TrotaMundos - Agencia de Viajes</title>
+        <link rel="stylesheet" type="text/css" href="../../../CSS/viajes_pais.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <header>
+            <img id="logo" src="../../../imagenes/trotamundos.png"/>
+            <h1>TrotaMundos</h1>
+
+            <form id="iniciarSesion">
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" name="usuario" required/>
+                <label for="pwd">Contraseña</label>
+                <input type="password" id="pwd" name="pwd" required/>
+                <input type="submit" id="login" name="login" value="Login" required/>
+            </form>
+
+            <a id="altaUsuario" href="../../altausuarios.html"><strong>Alta usuario</strong></a>
+
+            <nav>
+                <a href="../../index.html">Inicio</a>
+                <a href="../../viajes.html">Viajes</a>
+                <a href="../../viajes_grupo.html">Viajes grupales</a>
+                <a href="../../ofertas.html">Ofertas</a>
+                <a href="../../sobre_agencia.html">Sobre nosotros</a>
+                <a href="../../sugerencias.html">Sugerencias</a>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Menú lateral por continentes / países -->
+            <aside id="menuViajes">
+                <h2>Destinos por continente</h2>
+                <ul>
+                    <li><strong>Europa</strong>
+                        <ul>
+                            <li><a href="../Europa/viajes_francia.html">Francia</a></li>
+                            <li><a href="../Europa/viajes_italia.html">Italia</a></li>
+                            <li><a href="../Europa/viajes_alemania.html">Alemania</a></li>
+                            <li><a href="../Europa/viajes_noruega.html">Noruega</a></li>
+                            <li><a href="../Europa/viajes_suiza.html">Suiza</a></li>
+                            <li><a href="../Europa/viajes_grecia.html">Grecia</a></li>
+                        </ul>
+                    </li>
+                    <li><strong>América</strong>
+                        <ul>
+                            <li><a href="../America/viajes_canada.html">Canadá</a></li>
+                            <li><a href="../America/viajes_eeuu.html">EE.UU.</a></li>
+                            <li><a href="../America/viajes_mexico.html">México</a></li>
+                            <li><a href="../America/viajes_argentina.html">Argentina</a></li>
+                            <li><a href="../America/viajes_brasil.html">Brasil</a></li>
+                        </ul>
+                    </li>
+                    <li><strong>Asia</strong>
+                        <ul>
+                            <li><a href="../Asia/viajes_china.html">China</a></li>
+                            <li><a href="../Asia/viajes_japon.html">Japón</a></li>
+                            <li><a href="../Asia/viajes_taiwan.html">Taiwán</a></li>
+                            <li><a href="../Asia/viajes_tailandia.html">Tailandia</a></li>
+                            <li><a href="../Asia/viajes_maldivas.html">Maldivas</a></li>
+                            <li><a href="../Asia/viajes_srilanka.html">Sri Lanka</a></li>
+                        </ul>
+                    </li>  
+                    <li><strong>Oceanía</strong>
+                        <ul>
+                            <li><a href="../Oceania/viajes_australia.html">Australia</a></li>
+                            <li><a href="../Oceania/viajes_nuevazelanda.html">Nueva Zelanda</a></li>
+                            <li><a href="../Oceania/viajes_fiji.html">Fiji</a></li>
+                        </ul>
+                    </li>   
+                    <li><strong>África</strong>
+                        <ul>
+                            <li><a href="../Africa/viajes_kenia.html">Kenia</a></li>
+                            <li><a href="../Africa/viajes_egipto.html">Egipto</a></li>
+                            <li><a href="../Africa/viajes_tanzania.html">Tanzania</a></li>
+                        </ul>
+                    </li>  
+                </ul>
+            </aside>
+
+            <section id="listaViajes">
+                <h3 id="tituloListaViajes">Viajes en Argentina</h3>
+                
+                <!-- PRIMERA FILA -->
+                <article class="viaje">
+                    <a id="buenos-aires" href="../America/Argentina/46.html">
+                        <img src="../../../imagenes/buenos-aires.jpg">
+                    </a>
+                    <h3>Buenos Aires</h3>
+                    <p>Fechas disponibles: 10-17 Marzo</p>
+                    <p id="separadorCentro"> </p>
+                    <p>Vibrante capital conocida por su arquitectura europea y su pasión por el tango. Recorre barrios como San Telmo y La Boca, 
+                        visita el Teatro Colón y disfruta de su reconocida gastronomía.</p>
+                </article>
+
+                <article class="viaje">
+                    <a id="cordoba" href="../America/Argentina/47.html">
+                        <img src="../../../imagenes/cordoba.jpg">
+                    </a>
+                    <h3>Córdoba</h3>
+                    <p>Fechas disponibles: 22-29 Abril</p>
+                    <p id="separadorCentro"> </p>
+                    <p>Ciudad histórica con una importante vida universitaria. Descubre su casco colonial, la Manzana Jesuítica y 
+                        disfruta de las sierras cercanas ideales para el turismo rural.</p>
+                </article>
+
+                <article class="viaje">
+                    <a id="mendoza" href="../America/Argentina/48.html">
+                        <img src="../../../imagenes/mendoza.jpg">
+                    </a>                    
+                    <h3>Mendoza</h3>
+                    <p>Fechas disponibles: 5-12 Mayo</p>
+                    <p id="separadorCentro"> </p>
+                    <p>Capital del vino argentino. Visita bodegas, degusta vinos de fama mundial y 
+                        contempla la Cordillera de los Andes con vistas al Aconcagua.</p>
+                </article>
+
+                <!-- SEGUNDA FILA -->
+                 <article class="viaje">
+                    <a id="rosario" href="../America/Argentina/49.html">
+                        <img src="../../../imagenes/rosario.jpg">
+                    </a>
+                    <h3>Rosario</h3>
+                    <p>Fechas disponibles: 14-21 Junio</p>
+                    <p id="separadorCentro"> </p>
+                    <p>Ciudad a orillas del río Paraná, cuna de la bandera argentina. Pasea por 
+                        su costanera, parques y disfruta de su ambiente cultural y artístico.</p>
+                </article>
+
+                <article class="viaje">
+                    <a id="bariloche" href="../America/Argentina/50.html">
+                        <img src="../../../imagenes/bariloche.jpg">
+                    </a>
+                    <h3>Bariloche</h3>
+                    <p>Fechas disponibles: 8-15 Agosto</p>
+                    <p id="separadorCentro"> </p>
+                    <p>Destino de montaña con paisajes de lagos y bosques. Ideal para esquiar en 
+                        invierno o hacer senderismo en verano, además de disfrutar de su famoso chocolate artesanal.</p>
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            <p id="sobreNosotros">SOBRE NOSOTROS</p>
+            <a href="contacto.html">Contacto</a>
+            <br>
+            <a href="https://docs.google.com/document/d/1J6dwtbxbZyRSLV7A461OkP3R2SLclDsuH2891gszpWE/edit?usp=sharing">Desarrollo</a>
+            <br><br>
+            <hr>
+            <p id="copyright">© TrotaMundos</p>
+            <p id="ultimaModificacion">Última modificación: 29/04/2026</p>
+        </footer>
+
+    </body>
+</html>

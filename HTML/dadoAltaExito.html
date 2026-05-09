@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Incluyo meta charset para que se puedan visibilizar correctamente todos los símbolos, acentos, etc -->
+        <meta charset="UTF-8"> 
+        <title>TrotaMundos - Agencia de Viajes</title>
+        <link rel="stylesheet" type="text/css" href="../CSS/altausuarios.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <header>
+            <img id="logo" src="../imagenes/trotamundos.png"/>
+            <h1>TrotaMundos</h1>
+
+            <form id="iniciarSesion">
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" name="usuario" required/>
+                <label for="pwd">Contraseña</label>
+                <input type="password" id="pwd" name="pwd" required/>
+                <input type="submit" id="login" name="login" value="Login" required/>
+            </form>
+
+            <a id="altaUsuario" href="altausuarios.html"><strong>Alta usuario</strong></a>
+
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="viajes.html">Viajes</a>
+                <a href="viajes_grupo.html">Viajes grupales</a>
+                <a href="ofertas.html">Ofertas</a>
+                <a href="sobre_agencia.html">Sobre nosotros</a>
+                <a href="sugerencias.html">Sugerencias</a>
+            </nav>
+        </header>
+
+        <main>
+
+            <figure id="registroExitoso">
+                <h1>¡Se ha registrado correctamente!</h1>
+                <p>Puede volver a la página principal.</p>
+                <img src="../imagenes/tickVerde.png">
+            </figure>
+            
+        </main>
+
+        <footer>
+            <p id="sobreNosotros">SOBRE NOSOTROS</p>
+            <a href="contacto.html">Contacto</a>
+            <br>
+            <a href="https://docs.google.com/document/d/1J6dwtbxbZyRSLV7A461OkP3R2SLclDsuH2891gszpWE/edit?usp=sharing">Desarrollo</a>
+            <br><br>
+            <hr>
+            <p id="copyright">© TrotaMundos</p>
+            <p id="ultimaModificacion">Última modificación: 29/04/2026</p>
+        </footer>
+
+    </body>
+</html>

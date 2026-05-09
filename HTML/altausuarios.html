@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Incluyo meta charset para que se puedan visibilizar correctamente todos los símbolos, acentos, etc -->
+        <meta charset="UTF-8"> 
+        <title>TrotaMundos - Agencia de Viajes</title>
+        <link rel="stylesheet" type="text/css" href="../CSS/altausuarios.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <header>
+            <img id="logo" src="../imagenes/trotamundos.png"/>
+            <h1>TrotaMundos</h1>
+
+            <form id="iniciarSesion">
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" name="usuario" required/>
+                <label for="pwd">Contraseña</label>
+                <input type="password" id="pwd" name="pwd" required/>
+                <input type="submit" id="login" name="login" value="Login" required/>
+            </form>
+
+            <a id="altaUsuario" href="altausuarios.html"><strong>Alta usuario</strong></a>
+
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="viajes.html">Viajes</a>
+                <a href="viajes_grupo.html">Viajes grupales</a>
+                <a href="ofertas.html">Ofertas</a>
+                <a href="sobre_agencia.html">Sobre nosotros</a>
+                <a href="sugerencias.html">Sugerencias</a>
+            </nav>
+        </header>
+
+        <main>
+            <figure id="fotoConTexto">
+                <img src="../imagenes/pasaporte.jpeg">
+                
+                <figcaption class="infoSuperpuesta">
+                    <h2>¡Únete a TrotaMundos!</h2>
+                    <p>Al crear una cuenta en TrotaMundos podrás disfrutar de servicios y ofertas exclusivas como:
+                        <ul>
+                            <li>Acceso a promociones únicas para miembros.</li>
+                            <li>Recibir recomendaciones personalizadas basadas en tus intereses.</li>
+                            <li>Participar en programas de fidelidad y acumular puntos para futuras reservas.</li>
+                            <li>Ofertas especiales para estudiantes y jubilados.</li>
+                        </ul>
+                    </p>
+                </figcaption>
+            </figure>
+
+            <form class="areaRegistro carrusel" action="dadoAltaExito.html">
+                <h2 id="tituloFormulario">Registrarse</h2>
+
+                <input type="radio" name="pasos" id="pasarAPaso1" checked hidden>
+                <input type="radio" name="pasos" id="pasarAPaso2" hidden>
+                <input type="radio" name="pasos" id="pasarAPaso3" hidden>
+
+                <fieldset class="paso" id="paso1">
+                    <legend>Datos Personales</legend>
+                    <input type="text" name="nombre" placeholder="NOMBRE" required>
+                    <input type="text" name="apellidos" placeholder="APELLIDOS" required>
+                    <!-- Pongo min 18 porque es la edad mínima para crearse una cuenta, max para poner el límite máximo de edad y uso
+                    step="1" para permitir solo números enteros y no decimales -->
+                    <input type="number" name="edad" placeholder="EDAD" min="18" max="99" step="1" required>
+                    <input type="text" name="direccion" placeholder="DIRECCIÓN" required>
+                    <label for="pasarAPaso2" class="boton">Siguiente</label>
+                </fieldset>
+
+                <fieldset class="paso" id="paso2">
+                    <legend>Contacto y Ocupación</legend>
+                    <input type="tel" name="telefono" placeholder="TELÉFONO" min="9" max="13" required>
+                    <input type="email" name="email" placeholder="EMAIL" required>
+                    <input type="password" name="Password" placeholder="CONTRASEÑA" required>
+                    <select name="ocupacion" required>
+                        <!-- Con selected disabled hidden pongo esa opción por defecto para que al entrar en la página no aparezca
+                        directamente Estudiante seleccionado -->
+                        <option value="" selected disabled hidden>Selecciona tu ocupación</option>
+                        <option value="estudiante">Estudiante</option>
+                        <option value="trabajador">Trabajador</option>
+                        <option value="jubilado">Jubilado</option>
+                    </select>
+                    <label for="pasarAPaso1" class="boton">Anterior</label>
+                    <label for="pasarAPaso3" class="boton">Siguiente</label>
+                </fieldset>
+
+                <fieldset class="paso" id="paso3">
+                    <legend>Preferencias</legend>
+                    <p>¿Desea recibir ofertas y promociones por correo electrónico?</p>
+                    <section class="opcionesRecibirCorreo">
+                        <label class="radioInline">
+                            <input type="radio" name="recibirCorreo" value="si" required> Sí
+                        </label>
+                        
+                        <label class="radioInline">
+                            <input type="radio" name="recibirCorreo" value="no" required> No
+                        </label>
+                    </section>
+                    <label for="pasarAPaso2" class="boton">Anterior</label>
+                    <input id="registrar" type="submit" value="REGISTRARSE">
+                </fieldset>
+            </form>
+        </main>
+
+        <footer>
+            <p id="sobreNosotros">SOBRE NOSOTROS</p>
+            <a href="contacto.html">Contacto</a>
+            <br>
+            <a href="https://docs.google.com/document/d/1J6dwtbxbZyRSLV7A461OkP3R2SLclDsuH2891gszpWE/edit?usp=sharing">Desarrollo</a>
+            <br><br>
+            <hr>
+            <p id="copyright">© TrotaMundos</p>
+            <p id="ultimaModificacion">Última modificación: 29/04/2026</p>
+        </footer>
+
+    </body>
+</html>

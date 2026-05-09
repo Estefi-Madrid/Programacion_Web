@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Incluyo meta charset para que se puedan visibilizar correctamente todos los símbolos, acentos, etc -->
+        <meta charset="UTF-8"> 
+        <title>TrotaMundos - Agencia de Viajes</title>
+        <link rel="stylesheet" type="text/css" href="../../CSS/viajeX.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <header>
+            <img id="logo" src="../../imagenes/trotamundos.png"/>
+            <h1>TrotaMundos</h1>
+
+            <form id="iniciarSesion">
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" name="usuario" required/>
+                <label for="pwd">Contraseña</label>
+                <input type="password" id="pwd" name="pwd" required/>
+                <input type="submit" id="login" name="login" value="Login" required/>
+            </form>
+
+            <a id="altaUsuario" href="../altausuarios.html"><strong>Alta usuario</strong></a>
+
+            <nav>
+                <a href="../index.html">Inicio</a>
+                <a href="../viajes.html">Viajes</a>
+                <a href="../viajes_grupo.html">Viajes grupales</a>
+                <a href="../ofertas.html">Ofertas</a>
+                <a href="../sobre_agencia.html">Sobre nosotros</a>
+                <a href="../sugerencias.html">Sugerencias</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="imagenSitioNombre">
+                <img id="imagenPrincipal" src="../../imagenes/granada.jpg">
+                <h1>Granada</h1>
+            </section>
+
+            <p id="fechasDisponibles">Fechas disponibles: 27 Abril al 3 de Mayo</p>
+            
+            <section class="alojamientos">
+                <h2>Alojamientos</h2>
+                <article>
+                    <p class="nombreHotel"><strong>Hostal Rodri</strong></p>
+                    <small><em>C. Laurel de las Tablas, 9</em></small>
+                    <details>
+                        <summary><em>Datos de contacto</em></summary>
+                        <li><p><strong>Teléfono: </strong>
+                            <a href="tel:958288043">958 28 80 43</a>
+                        </p></li>
+                        <li><p><strong>Sitio web: </strong>
+                            <a href="https://www.hostalrodri.com/">www.hostalrodri.com</a>
+                        </p></li>
+                    </details>
+                </article>
+
+                <article>
+                    <p class="nombreHotel"><strong>Hostal Atenas</strong></p>
+                    <small><em>C. Gran Vía de Colón, 38</em></small>
+                    <details>
+                        <summary><em>Datos de contacto</em></summary>
+                        <li><p><strong>Teléfono: </strong>
+                            <a href="tel:958278750">958 27 87 50</a>
+                        </p></li>
+                        <li><p><strong>Sitio web: </strong>
+                            <a href="https://atenasalojamientogranada.com/?utm_source=maps&utm_medium=local&utm_campaign=fichaGBP">atenasalojamientogranada.com</a>
+                        </p></li>
+                    </details>
+                </article>
+
+                <article>
+                    <p class="nombreHotel"><strong>Elvira Suites</strong></p>
+                    <small><em>C. Elvira, 63</em></small>
+                    <details>
+                        <summary><em>Datos de contacto</em></summary>
+                        <li><p><strong>Teléfono: </strong>
+                            <a href="tel:687387927">687 38 79 27</a>
+                        </p></li>
+                    </details>
+                </article>
+
+                <article>
+                    <p class="nombreHotel"><strong>Hotel Shine Alcaicería</strong></p>
+                    <small>C. Zacatín, 5<em></em></small>
+                    <details>
+                        <summary><em>Datos de contacto</em></summary>
+                        <li><p><strong>Teléfono: </strong>
+                            <a href="tel:958224402">958 22 44 02</a>
+                        </p></li>
+                        <li><p><strong>Sitio web: </strong>
+                            <a href="https://shinehotels.com/hotel-shine-alcaiceria-granada/?lang=en">shinehotels.com</a>
+                        </p></li>
+                    </details>
+                </article>
+                 
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3178.991958601402!2d-3.6072090181043652!3d37.17666207457621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1777366755589!5m2!1ses!2ses" 
+                        width="600" 
+                        height="450"
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </section>
+            
+            <section class="itinerario">
+                <h2>Itinerario</h2>
+                
+                <article>
+                    <h3>Día 1 - 27 de abril</h3>
+                    <ul>
+                        <li>Llegada + check in en el alojamiento</li>
+                        <li>Paseo por el centro histórico: Gran Vía, Plaza Nueva, Catedral, Reyes Católicos, Acera del Darro</li>
+                        <li>Cena de tapas en C/Navas</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>Día 2 - 28 de abril</h3>
+                    <ul>
+                        <li>Visita guiada a la Alhambra y Generalife</li>
+                        <li>Paseo por el Albayzin</li>
+                        <li>Mirador de San Nicolás al atardecer</li>
+                        <li>Cena con espectáculo flamenco</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>Día 3 - 29 de abril</h3>
+                    <ul>
+                        <li>Excursión a Sierra Nevada: Senderimo + Teleférico</li>
+                        <li>Comida en Sierra Nevada</li>
+                        <li>Regreso a Granada + Visita Museo de la Inquisición</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>Día 4 - 30 de abril</h3>
+                    <ul>
+                        <li>Puenting en Dúrcal</li>
+                        <li>Rafting en el Valle de Lecrín</li>
+                        <li>Atardecer en San Miguel Alto</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>Día 5 - 1 de mayo</h3>
+                    <ul>
+                        <li>Ruta cultural: Catedral y Capilla Real, Corral del Carbón, Alcaicería</li>
+                        <li>Tarde en la Alpujarras: Lanjarón, Soportújar, Pampaneira, Campaneira</li>
+                        <li>Cena en grupo</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>Día 6 - 2 de mayo</h3>
+                    <ul>
+                        <li>Cruces de Mayo: recorrido por las diferentes cruces con música, ambiente festivo y tapas</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>Día 1 - 27 de abril</h3>
+                    <ul>
+                        <li>Visita a los baños árabes</li>
+                        <li>Tiempo libre para compras de recuerdos</li>
+                        <li>Regreso</li>
+                    </ul>
+                </article>
+            </section>
+            
+            <h2 id="actividades">Actividades</h2>
+
+            <section class="actividades">
+                <article>
+                    <img src="../../imagenes/generalife.jpg">
+                    <h2>Culturales</h2>
+                    <ul>
+                        <li>Museo de la Inquisición</li>
+                        <li>Baños Árabes</li>
+                        <li>Alhambra y Generalife</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <img src="../../imagenes/rafting.jpeg">
+                    <h2>Aventuras</h2>
+                    <ul>
+                        <li>Puenting de Dúrcal</li>
+                        <li>Rafting en Valle de Lecrín</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <img src="../../imagenes/cahorros.jpg">
+                    <h2>En naturaleza</h2>
+                    <ul>
+                        <li>Senderismo por Sierra Nevada</li>
+                        <li>Ruta los Cahorros (Monachil)</li>
+                    </ul>
+                </article>
+            </section>
+
+            <p id="precios">Precios: Desde 1700 € a 2400 €</p>
+
+        </main>
+
+        <footer>
+            <p id="sobreNosotros">SOBRE NOSOTROS</p>
+            <a href="../contacto.html">Contacto</a>
+            <br>
+            <a href="https://docs.google.com/document/d/1J6dwtbxbZyRSLV7A461OkP3R2SLclDsuH2891gszpWE/edit?usp=sharing">Desarrollo</a>
+            <br><br>
+            <hr>
+            <p id="copyright">© TrotaMundos</p>
+            <p id="ultimaModificacion">Última modificación: 29/04/2026</p>
+        </footer>
+
+    </body>
+</html>

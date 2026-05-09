@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Incluyo meta charset para que se puedan visibilizar correctamente todos los símbolos, acentos, etc -->
+        <meta charset="UTF-8"> 
+        <title>TrotaMundos - Agencia de Viajes</title>
+        <link rel="stylesheet" type="text/css" href="../../../../CSS/viajeX.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <header>
+            <img id="logo" src="../../../../imagenes/trotamundos.png"/>
+            <h1>TrotaMundos</h1>
+
+            <form id="iniciarSesion">
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" name="usuario" required/>
+                <label for="pwd">Contraseña</label>
+                <input type="password" id="pwd" name="pwd" required/>
+                <input type="submit" id="login" name="login" value="Login" required/>
+            </form>
+
+            <a id="altaUsuario" href="../../../altausuarios.html"><strong>Alta usuario</strong></a>
+
+            <nav>
+                <a href="../../../index.html">Inicio</a>
+                <a href="../../../viajes.html">Viajes</a>
+                <a href="../../../viajes_grupo.html">Viajes grupales</a>
+                <a href="../../../ofertas.html">Ofertas</a>
+                <a href="../../../sobre_agencia.html">Sobre nosotros</a>
+                <a href="../../../sugerencias.html">Sugerencias</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="imagenSitioNombre">
+                <img id="imagenPrincipal" src="../../../../imagenes/kandy.jpg">
+                <h1>Kandy</h1>
+            </section>
+
+            <p id="fechasDisponibles">Fechas disponibles: 5 al 10 de Abril</p>
+
+            <section class="textoConEnlaces">
+                <article>
+                    <p>
+                        Descubrid París en grupo y dejaos enamorar por la ciudad de la luz. 
+                        Pasead junto al Sena, contemplad la Torre Eiffel y disfrutad de su 
+                        ambiente romántico, su increíble patrimonio cultural y su exquisita 
+                        gastronomía. Un viaje perfecto para compartir experiencias únicas.
+                    </p>
+                </article>
+
+                <nav>
+                    <p><strong>Viajes relacionados:</strong></p>
+                    <ul>
+                        <li><a href="../Francia/2.html">Lyon</a></li>
+                        <li><a href="../Francia/3.html">Niza</a></li>
+                        <li><a href="../Francia/4.html">Burdeos</a></li>
+                        <li><a href="../Francia/5.html">Marsella</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section class="alojamientos">
+                <h2>Alojamientos</h2>
+
+                <article>
+                    <p class="nombreHotel"><strong>Hotel Le Meurice</strong></p>
+                    <small><em>228 Rue de Rivoli</em></small>
+                    <details>
+                        <summary><em>Datos de contacto</em></summary>
+                        <li><p><strong>Teléfono: </strong>
+                            <a href="tel:+33144581010">+33 1 44 58 10 10</a>
+                        </p></li>
+                        <li><p><strong>Sitio web: </strong>
+                            <a href="https://www.dorchestercollection.com/paris/le-meurice">dorchestercollection.com</a>
+                        </p></li>
+                    </details>
+                </article>
+
+                <article>
+                    <p class="nombreHotel"><strong>Hotel Novotel Paris Centre Tour Eiffel</strong></p>
+                    <small><em>61 Quai de Grenelle</em></small>
+                    <details>
+                        <summary><em>Datos de contacto</em></summary>
+                        <li><p><strong>Teléfono: </strong>
+                            <a href="tel:+33140582000">+33 1 40 58 20 00</a>
+                        </p></li>
+                        <li><p><strong>Sitio web: </strong>
+                            <a href="https://all.accor.com/hotel/3546/index.es.shtml?utm_campaign=seo+maps&utm_medium=seo+maps&utm_source=google+Maps">all.accor.com</a>
+                        </p></li>
+                    </details>
+                </article>
+
+                <article>
+                    <p class="nombreHotel"><strong>Hotel ibis Paris Bastille</strong></p>
+                    <small><em>15 Rue Breguet</em></small>
+                    <details>
+                        <summary><em>Datos de contacto</em></summary>
+                        <li><p><strong>Teléfono: </strong>
+                            <a href="tel:+33149292030">+33 1 49 29 20 30</a>
+                        </p></li>
+                        <li><p><strong>Sitio web: </strong>
+                            <a href="https://all.accor.com/hotel/1399/index.es.shtml?utm_campaign=seo+maps&utm_medium=seo+maps&utm_source=google+Maps">all.accor.com</a>
+                        </p></li>
+                    </details>
+                </article>
+
+                <article>
+                    <p class="nombreHotel"><strong>Hotel Pullman Paris Montparnasse</strong></p>
+                    <small><em>19 Rue du Commandant René Mouchotte</em></small>
+                    <details>
+                        <summary><em>Datos de contacto</em></summary>
+                        <li><p><strong>Teléfono: </strong>
+                            <a href="tel:+33144364436">+33 1 44 36 44 36</a>
+                        </p></li>
+                        <li><p><strong>Sitio web: </strong>
+                            <a href="https://all.accor.com/hotel/8189/index.en.shtml?goto=fiche_hotel&code_hotel=8189&merchantid=seo-maps-FR-8189&sourceid=aw-cen&utm_medium=seo%20maps&utm_source=google%20Maps&utm_campaign=seo%20maps">all.accor.com</a>
+                        </p></li>
+                    </details>
+                </article>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.77816092716!2d2.264633192871854!3d48.85893848515098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2zUGFyw61zLCBGcmFuY2lh!5e0!3m2!1ses!2ses!4v1777390869594!5m2!1ses!2ses"
+                    width="600"
+                    height="450"
+                    allowfullscreen=""
+                    loading="lazy">
+                </iframe>
+            </section>
+
+            <section class="itinerario">
+                <h2>Itinerario</h2>
+
+                <article>
+                    <h3>Día 1 - 5 de abril</h3>
+                    <ul>
+                        <li>Llegada a París y check-in</li>
+                        <li>Paseo por el Sena</li>
+                        <li>Cena de bienvenida</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>Día 2 - 6 de abril</h3>
+                    <ul>
+                        <li>Torre Eiffel</li>
+                        <li>Campos Elíseos</li>
+                        <li>Arco del Triunfo</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>Día 3 - 7 de abril</h3>
+                    <ul>
+                        <li>Museo del Louvre</li>
+                        <li>Jardín de las Tullerías</li>
+                        <li>Paseo por Montmartre</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>Día 4 - 8 de abril</h3>
+                    <ul>
+                        <li>Catedral de Notre Dame</li>
+                        <li>Barrio Latino</li>
+                        <li>Tarde libre</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>Día 5 - 9 de abril</h3>
+                    <ul>
+                        <li>Excursión opcional a Versalles</li>
+                        <li>Tiempo libre en la ciudad</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>Día 6 - 10 de abril</h3>
+                    <ul>
+                        <li>Mañana libre</li>
+                        <li>Regreso</li>
+                    </ul>
+                </article>
+            </section>
+
+            <h2 id="actividades">Actividades</h2>
+
+            <section class="actividades">
+
+                <article>
+                    <img src="../../../../imagenes/notreDame.jpg">
+                    <h2>Culturales</h2>
+                    <ul>
+                        <li>Torre Eiffel</li>
+                        <li>Museo del Louvre</li>
+                        <li>Notre Dame</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <img src="../../../../imagenes/montmartre.jpg">
+                    <h2>Ciudad</h2>
+                    <ul>
+                        <li>Montmartre</li>
+                        <li>Campos Elíseos</li>
+                        <li>Barrio Latino</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <img src="../../../../imagenes/versalles.jpg">
+                    <h2>Excursiones</h2>
+                    <ul>
+                        <li>Versalles</li>
+                        <li>Paseos por el Sena</li>
+                        <li>Jardines históricos</li>
+                    </ul>
+                </article>
+
+            </section>
+
+            <p id="precios">Precios: Desde 900 € a 1700 €</p>
+
+        </main>
+
+        <footer>
+            <p id="sobreNosotros">SOBRE NOSOTROS</p>
+            <a href="../../../contacto.html">Contacto</a>
+            <br>
+            <a href="https://docs.google.com/document/d/1J6dwtbxbZyRSLV7A461OkP3R2SLclDsuH2891gszpWE/edit?usp=sharing">Desarrollo</a>
+            <br><br>
+            <hr>
+            <p id="copyright">© TrotaMundos</p>
+            <p id="ultimaModificacion">Última modificación: 29/04/2026</p>
+        </footer>
+
+    </body>
+</html>

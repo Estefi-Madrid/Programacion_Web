@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Incluyo meta charset para que se puedan visibilizar correctamente todos los símbolos, acentos, etc -->
+        <meta charset="UTF-8"> 
+        <title>TrotaMundos - Agencia de Viajes</title>
+        <link rel="stylesheet" type="text/css" href="../../../CSS/viajes_pais.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <header>
+            <img id="logo" src="../../../imagenes/trotamundos.png"/>
+            <h1>TrotaMundos</h1>
+
+            <form id="iniciarSesion">
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" name="usuario" required/>
+                <label for="pwd">Contraseña</label>
+                <input type="password" id="pwd" name="pwd" required/>
+                <input type="submit" id="login" name="login" value="Login" required/>
+            </form>
+
+            <a id="altaUsuario" href="../../altausuarios.html"><strong>Alta usuario</strong></a>
+
+            <nav>
+                <a href="../../index.html">Inicio</a>
+                <a href="../../viajes.html">Viajes</a>
+                <a href="../../viajes_grupo.html">Viajes grupales</a>
+                <a href="../../ofertas.html">Ofertas</a>
+                <a href="../../sobre_agencia.html">Sobre nosotros</a>
+                <a href="../../sugerencias.html">Sugerencias</a>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Menú lateral por continentes / países -->
+            <aside id="menuViajes">
+                <h2>Destinos por continente</h2>
+                <ul>
+                    <li><strong>Europa</strong>
+                        <ul>
+                            <li><a href="../Europa/viajes_francia.html">Francia</a></li>
+                            <li><a href="../Europa/viajes_italia.html">Italia</a></li>
+                            <li><a href="../Europa/viajes_alemania.html">Alemania</a></li>
+                            <li><a href="../Europa/viajes_noruega.html">Noruega</a></li>
+                            <li><a href="../Europa/viajes_suiza.html">Suiza</a></li>
+                            <li><a href="../Europa/viajes_grecia.html">Grecia</a></li>
+                        </ul>
+                    </li>
+                    <li><strong>América</strong>
+                        <ul>
+                            <li><a href="../America/viajes_canada.html">Canadá</a></li>
+                            <li><a href="../America/viajes_eeuu.html">EE.UU.</a></li>
+                            <li><a href="../America/viajes_mexico.html">México</a></li>
+                            <li><a href="../America/viajes_argentina.html">Argentina</a></li>
+                            <li><a href="../America/viajes_brasil.html">Brasil</a></li>
+                        </ul>
+                    </li>
+                    <li><strong>Asia</strong>
+                        <ul>
+                            <li><a href="../Asia/viajes_china.html">China</a></li>
+                            <li><a href="../Asia/viajes_japon.html">Japón</a></li>
+                            <li><a href="../Asia/viajes_taiwan.html">Taiwán</a></li>
+                            <li><a href="../Asia/viajes_tailandia.html">Tailandia</a></li>
+                            <li><a href="../Asia/viajes_maldivas.html">Maldivas</a></li>
+                            <li><a href="../Asia/viajes_srilanka.html">Sri Lanka</a></li>
+                        </ul>
+                    </li>  
+                    <li><strong>Oceanía</strong>
+                        <ul>
+                            <li><a href="../Oceania/viajes_australia.html">Australia</a></li>
+                            <li><a href="../Oceania/viajes_nuevazelanda.html">Nueva Zelanda</a></li>
+                            <li><a href="../Oceania/viajes_fiji.html">Fiji</a></li>
+                        </ul>
+                    </li>   
+                    <li><strong>África</strong>
+                        <ul>
+                            <li><a href="../Africa/viajes_kenia.html">Kenia</a></li>
+                            <li><a href="../Africa/viajes_egipto.html">Egipto</a></li>
+                            <li><a href="../Africa/viajes_tanzania.html">Tanzania</a></li>
+                        </ul>
+                    </li>  
+                </ul>
+            </aside>
+
+            <section id="listaViajes">
+                <h3 id="tituloListaViajes">Viajes en Tailandia</h3>
+                
+                <!-- PRIMERA FILA -->
+                <article class="viaje">
+                    <a id="bangkok" href="../Asia/Tailandia/71.html">
+                        <img src="../../../imagenes/bangkok.jpeg">
+                    </a>
+                    <h3>Bangkok</h3>
+                    <p>Fechas disponibles: 5-12 Marzo</p>
+                    <p id="separadorCentro"> </p>
+                    <p>Vibrante capital con templos espectaculares como Wat Pho y Wat Arun, 
+                        mercados flotantes y vida nocturna animada.</p>
+                </article>
+
+                <article class="viaje">
+                    <a id="chiang-mai" href="../Asia/Tailandia/72.html">
+                        <img src="../../../imagenes/chiang-mai.jpg">
+                    </a>
+                    <h3>Chiang Mai</h3>
+                    <p>Fechas disponibles: 18-25 Abril</p>
+                    <p id="separadorCentro"> </p>
+                    <p>Ciudad cultural en el norte, famosa por sus templos antiguos, talleres de artesanía y 
+                        cercanía a parques naturales y reservas de elefantes.</p>
+                </article>
+
+                <article class="viaje">
+                    <a id="phuket" href="../Asia/Tailandia/73.html">
+                        <img src="../../../imagenes/phuket.jpg">
+                    </a>                    
+                    <h3>Phuket</h3>
+                    <p>Fechas disponibles: 3-10 Junio</p>
+                    <p id="separadorCentro"> </p>
+                    <p>Isla paradisíaca con playas de arena blanca, vida nocturna en Patong y excursiones 
+                        a islas cercanas como Phi Phi o Similan.</p>
+                </article>
+
+                <!-- SEGUNDA FILA -->
+                 <article class="viaje">
+                    <a id="pattaya" href="../Asia/Tailandia/74.html">
+                        <img src="../../../imagenes/pattaya.jpg">
+                    </a>
+                    <h3>Pattaya</h3>
+                    <p>Fechas disponibles: 15-22 Julio</p>
+                    <p id="separadorCentro"> </p>
+                    <p>Destino costero cerca de Bangkok, ideal para deportes acuáticos, vida nocturna 
+                        y visitar el Santuario de la Verdad.</p>
+                </article>
+
+                <article class="viaje">
+                    <a id="krabi" href="../Asia/Tailandia/75.html">
+                        <img src="../../../imagenes/krabi.jpg">
+                    </a>
+                    <h3>Krabi</h3>
+                    <p>Fechas disponibles: 20-27 Septiembre</p>
+                    <p id="separadorCentro"> </p>
+                    <p>Región famosa por sus acantilados de piedra caliza, playas como Railay Beach y actividades de escalada 
+                        y kayak en entornos naturales impresionantes.</p>
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            <p id="sobreNosotros">SOBRE NOSOTROS</p>
+            <a href="contacto.html">Contacto</a>
+            <br>
+            <a href="https://docs.google.com/document/d/1J6dwtbxbZyRSLV7A461OkP3R2SLclDsuH2891gszpWE/edit?usp=sharing">Desarrollo</a>
+            <br><br>
+            <hr>
+            <p id="copyright">© TrotaMundos</p>
+            <p id="ultimaModificacion">Última modificación: 29/04/2026</p>
+        </footer>
+
+    </body>
+</html>

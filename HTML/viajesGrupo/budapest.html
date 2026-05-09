@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Incluyo meta charset para que se puedan visibilizar correctamente todos los símbolos, acentos, etc -->
+        <meta charset="UTF-8"> 
+        <title>TrotaMundos - Agencia de Viajes</title>
+        <link rel="stylesheet" type="text/css" href="../../CSS/viajeX.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <header>
+            <img id="logo" src="../../imagenes/trotamundos.png"/>
+            <h1>TrotaMundos</h1>
+
+            <form id="iniciarSesion">
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" name="usuario" required/>
+                <label for="pwd">Contraseña</label>
+                <input type="password" id="pwd" name="pwd" required/>
+                <input type="submit" id="login" name="login" value="Login" required/>
+            </form>
+
+            <a id="altaUsuario" href="../altausuarios.html"><strong>Alta usuario</strong></a>
+
+            <nav>
+                <a href="../index.html">Inicio</a>
+                <a href="../viajes.html">Viajes</a>
+                <a href="../viajes_grupo.html">Viajes grupales</a>
+                <a href="../ofertas.html">Ofertas</a>
+                <a href="../sobre_agencia.html">Sobre nosotros</a>
+                <a href="../sugerencias.html">Sugerencias</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="imagenSitioNombre">
+                <img id="imagenPrincipal" src="../../imagenes/budapest.jpg">
+                <h1>Budapest</h1>
+            </section>
+
+            <p id="fechasDisponibles">Fechas disponibles: 15 al 22 de Abril</p>
+            
+            <section class="alojamientos">
+                <h2>Alojamientos</h2>
+
+                <article>
+                    <p class="nombreHotel"><strong>Hotel Continental Budapest</strong></p>
+                    <small><em>Dohány u. 42-44</em></small>
+                    <details>
+                        <summary><em>Datos de contacto</em></summary>
+                        <li><p><strong>Teléfono: </strong>
+                            <a href="tel:+3618151000">+36 1 815 1000</a>
+                        </p></li>
+                        <li><p><strong>Sitio web: </strong>
+                            <a href="https://continentalhotelbudapest.com/en">continentalhotelbudapest.com</a>
+                        </p></li>
+                    </details>
+                </article>
+
+                <article>
+                    <p class="nombreHotel"><strong>Hotel Danubius Hotel Astoria</strong></p>
+                    <small><em>Kossuth Lajos u. 19-21</em></small>
+                    <details>
+                        <summary><em>Datos de contacto</em></summary>
+                        <li><p><strong>Teléfono: </strong>
+                            <a href="tel:+3618896000">+36 1 889 6000</a>
+                        </p></li>
+                        <li><p><strong>Sitio web: </strong>
+                            <a href="https://www.danubiushotels.com/en/our-hotels-budapest/danubius-hotel-astoria">danubiushotels.com</a>
+                        </p></li>
+                    </details>
+                </article>
+
+                <article>
+                    <p class="nombreHotel"><strong>Hotel Bo33 Hotel Family & Suites</strong></p>
+                    <small><em>Szövetség u. 33</em></small>
+                    <details>
+                        <summary><em>Datos de contacto</em></summary>
+                        <li><p><strong>Teléfono: </strong>
+                            <a href="tel:+361763270">+36 1 76 3270</a>
+                        </p></li>
+                        <li><p><strong>Sitio web: </strong>
+                            <a href="https://www.bo33hotelbudapest.com/">bo33hotelbudapest.com</a>
+                        </p></li>
+                    </details>
+                </article>
+
+                <article>
+                    <p class="nombreHotel"><strong>Hotel InterContinental Budapest</strong></p>
+                    <small><em>Apáczai Csere János u. 12-14</em></small>
+                    <details>
+                        <summary><em>Datos de contacto</em></summary>
+                        <li><p><strong>Teléfono: </strong>
+                            <a href="tel:+3613276333">+36 1 327 6333</a>
+                        </p></li>
+                        <li><p><strong>Sitio web: </strong>
+                            <a href="https://www.ihg.com/intercontinental/hotels/gb/en/budapest/budhb/hoteldetail?cm_mmc=GoogleMaps-_-IC-_-HU-_-BUDHB">ihg.com</a>
+                        </p></li>
+                    </details>
+                </article>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43108.5!2d19.0402!3d47.4979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc2b0a0a0a0a%3A0x0!2sBudapest!5e0!3m2!1ses!2ses!4v1777378000000!5m2!1ses!2ses"
+                    width="600"
+                    height="450"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </section>
+
+            <section class="itinerario">
+                <h2>Itinerario</h2>
+
+                <article>
+                    <h3>Día 1 - 15 de abril</h3>
+                    <ul>
+                        <li>Llegada a Budapest y check-in en el hotel</li>
+                        <li>Paseo por el Danubio</li>
+                        <li>Puente de las Cadenas</li>
+                        <li>Cena en Pest</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>Día 2 - 16 de abril</h3>
+                    <ul>
+                        <li>Parlamento de Budapest</li>
+                        <li>Bastión de los Pescadores</li>
+                        <li>Iglesia de Matías</li>
+                        <li>Tarde libre</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>Día 3 - 17 de abril</h3>
+                    <ul>
+                        <li>Castillo de Buda</li>
+                        <li>Funicular de Buda</li>
+                        <li>Colina Gellért</li>
+                        <li>Baños termales Gellért</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>Día 4 - 18 de abril</h3>
+                    <ul>
+                        <li>Gran Mercado Central</li>
+                        <li>Avenida Andrássy</li>
+                        <li>Ópera de Budapest</li>
+                        <li>Cena de grupo</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>Día 5 - 19 de abril</h3>
+                    <ul>
+                        <li>Excursión al lago Balatón (opcional)</li>
+                        <li>Relax en el entorno natural</li>
+                        <li>Regreso a Budapest</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>Día 6 - 20 de abril</h3>
+                    <ul>
+                        <li>Baños Széchenyi</li>
+                        <li>Parque de la Ciudad</li>
+                        <li>Castillo Vajdahunyad</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>Día 7 - 21 de abril</h3>
+                    <ul>
+                        <li>Mañana libre para compras</li>
+                        <li>Paseo final por el Danubio</li>
+                        <li>Preparación de regreso</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3>Día 8 - 22 de abril</h3>
+                    <ul>
+                        <li>Regreso</li>
+                    </ul>
+                </article>
+            </section>
+
+            <h2 id="actividades">Actividades</h2>
+
+            <section class="actividades">
+
+                <article>
+                    <img src="../../imagenes/parlamentoBudapest.jpg">
+                    <h2>Culturales</h2>
+                    <ul>
+                        <li>Parlamento de Budapest</li>
+                        <li>Castillo de Buda</li>
+                        <li>Bastión de los Pescadores</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <img src="../../imagenes/banosSzechenyi.jpg">
+                    <h2>Aventuras</h2>
+                    <ul>
+                        <li>Baños Széchenyi</li>
+                        <li>Baños Gellért</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <img src="../../imagenes/danubioBudapest.jpg">
+                    <h2>En naturaleza</h2>
+                    <ul>
+                        <li>Danubio</li>
+                        <li>Colina Gellért</li>
+                        <li>Lago Balatón</li>
+                    </ul>
+                </article>
+
+            </section>
+
+            <p id="precios">Precios: Desde 1400 € a 2300 €</p>
+
+        </main>
+
+        <footer>
+            <p id="sobreNosotros">SOBRE NOSOTROS</p>
+            <a href="../contacto.html">Contacto</a>
+            <br>
+            <a href="https://docs.google.com/document/d/1J6dwtbxbZyRSLV7A461OkP3R2SLclDsuH2891gszpWE/edit?usp=sharing">Desarrollo</a>
+            <br><br>
+            <hr>
+            <p id="copyright">© TrotaMundos</p>
+            <p id="ultimaModificacion">Última modificación: 29/04/2026</p>
+        </footer>
+
+    </body>
+</html>

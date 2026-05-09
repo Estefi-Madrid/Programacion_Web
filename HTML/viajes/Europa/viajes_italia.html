@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Incluyo meta charset para que se puedan visibilizar correctamente todos los símbolos, acentos, etc -->
+        <meta charset="UTF-8"> 
+        <title>TrotaMundos - Agencia de Viajes</title>
+        <link rel="stylesheet" type="text/css" href="../../../CSS/viajes_pais.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <header>
+            <img id="logo" src="../../../imagenes/trotamundos.png"/>
+            <h1>TrotaMundos</h1>
+
+            <form id="iniciarSesion">
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" name="usuario" required/>
+                <label for="pwd">Contraseña</label>
+                <input type="password" id="pwd" name="pwd" required/>
+                <input type="submit" id="login" name="login" value="Login" required/>
+            </form>
+
+            <a id="altaUsuario" href="../../altausuarios.html"><strong>Alta usuario</strong></a>
+
+            <nav>
+                <a href="../../index.html">Inicio</a>
+                <a href="../../viajes.html">Viajes</a>
+                <a href="../../viajes_grupo.html">Viajes grupales</a>
+                <a href="../../ofertas.html">Ofertas</a>
+                <a href="../../sobre_agencia.html">Sobre nosotros</a>
+                <a href="../../sugerencias.html">Sugerencias</a>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Menú lateral por continentes / países -->
+            <aside id="menuViajes">
+                <h2>Destinos por continente</h2>
+                <ul>
+                    <li><strong>Europa</strong>
+                        <ul>
+                            <li><a href="../Europa/viajes_francia.html">Francia</a></li>
+                            <li><a href="../Europa/viajes_italia.html">Italia</a></li>
+                            <li><a href="../Europa/viajes_alemania.html">Alemania</a></li>
+                            <li><a href="../Europa/viajes_noruega.html">Noruega</a></li>
+                            <li><a href="../Europa/viajes_suiza.html">Suiza</a></li>
+                            <li><a href="../Europa/viajes_grecia.html">Grecia</a></li>
+                        </ul>
+                    </li>
+                    <li><strong>América</strong>
+                        <ul>
+                            <li><a href="../America/viajes_canada.html">Canadá</a></li>
+                            <li><a href="../America/viajes_eeuu.html">EE.UU.</a></li>
+                            <li><a href="../America/viajes_mexico.html">México</a></li>
+                            <li><a href="../America/viajes_argentina.html">Argentina</a></li>
+                            <li><a href="../America/viajes_brasil.html">Brasil</a></li>
+                        </ul>
+                    </li>
+                    <li><strong>Asia</strong>
+                        <ul>
+                            <li><a href="../Asia/viajes_china.html">China</a></li>
+                            <li><a href="../Asia/viajes_japon.html">Japón</a></li>
+                            <li><a href="../Asia/viajes_taiwan.html">Taiwán</a></li>
+                            <li><a href="../Asia/viajes_tailandia.html">Tailandia</a></li>
+                            <li><a href="../Asia/viajes_maldivas.html">Maldivas</a></li>
+                            <li><a href="../Asia/viajes_srilanka.html">Sri Lanka</a></li>
+                        </ul>
+                    </li>  
+                    <li><strong>Oceanía</strong>
+                        <ul>
+                            <li><a href="../Oceania/viajes_australia.html">Australia</a></li>
+                            <li><a href="../Oceania/viajes_nuevazelanda.html">Nueva Zelanda</a></li>
+                            <li><a href="../Oceania/viajes_fiji.html">Fiji</a></li>
+                        </ul>
+                    </li>   
+                    <li><strong>África</strong>
+                        <ul>
+                            <li><a href="../Africa/viajes_kenia.html">Kenia</a></li>
+                            <li><a href="../Africa/viajes_egipto.html">Egipto</a></li>
+                            <li><a href="../Africa/viajes_tanzania.html">Tanzania</a></li>
+                        </ul>
+                    </li>  
+                </ul>
+            </aside>
+
+            <section id="listaViajes">
+                <h3 id="tituloListaViajes">Viajes en Italia</h3>
+                
+                <!-- PRIMERA FILA -->
+                <article class="viaje">
+                    <a id="roma" href="../Europa/Italia/6.html">
+                        <img src="../../../imagenes/roma.jpg">
+                    </a>
+                    <h3>Roma</h3>
+                    <p>Fechas disponibles: 5-12 Mayo</p>
+                    <p id="separadorCentro"> </p>
+                    <p>La Ciudad Eterna te espera con el Coliseo, el Foro Romano y 
+                        la Fontana di Trevi. Disfruta de su rica historia, plazas y 
+                        calles llenas de cafés y gelaterías.</p>
+                </article>
+
+                <article class="viaje">
+                    <a id="florencia" href="../Europa/Italia/7.html">
+                        <img src="../../../imagenes/florencia.jpg">
+                    </a>
+                    <h3>Florencia</h3>
+                    <p>Fechas disponibles: 10-17 Mayo</p>
+                    <p id="separadorCentro"> </p>
+                    <p>Cuna del Renacimiento. Admira la Catedral de Santa María del Fiore, 
+                        la Galería Uffizi y pasea por el Ponte Vecchio mientras disfrutas de 
+                        la arquitectura y el arte italiano.</p>
+                </article>
+
+                <article class="viaje">
+                    <a id="venecia" href="../Europa/Italia/8.html">
+                        <img src="../../../imagenes/venecia.jpeg">
+                    </a>                    
+                    <h3>Venecia</h3>
+                    <p>Fechas disponibles: 15-22 Mayo</p>
+                    <p id="separadorCentro"> </p>
+                    <p>La ciudad de los canales. Navega en góndola por el Gran Canal, visita la 
+                        Plaza de San Marcos y el Palacio Ducal, y disfruta del ambiente único de
+                        sus callejones y puentes.</p>
+                </article>
+
+                <!-- SEGUNDA FILA -->
+                 <article class="viaje">
+                    <a id="milan" href="../Europa/Italia/9.html">
+                        <img src="../../../imagenes/milan.jpg">
+                    </a>
+                    <h3>Milán</h3>
+                    <p>Fechas disponibles: 8-15 Mayo</p>
+                    <p id="separadorCentro"> </p>
+                    <p>Capital de la moda y el diseño. Recorre el Duomo, la Galería Vittorio Emanuele II 
+                        y el barrio de Brera, y no te pierdas la ópera en La Scala.</p>
+                </article>
+
+                <article class="viaje">
+                    <a id="napoles" href="../Europa/Italia/10.html">
+                        <img src="../../../imagenes/napoles.jpg">
+                    </a>
+                    <h3>Nápoles</h3>
+                    <p>Fechas disponibles: 12-19 Mayo</p>
+                    <p id="separadorCentro"> </p>
+                    <p>Ciudad histórica junto al mar. Descubre el casco antiguo, prueba la auténtica pizza 
+                        napolitana y visita el cercano Vesubio y las ruinas de Pompeya.</p>
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            <p id="sobreNosotros">SOBRE NOSOTROS</p>
+            <a href="contacto.html">Contacto</a>
+            <br>
+            <a href="https://docs.google.com/document/d/1J6dwtbxbZyRSLV7A461OkP3R2SLclDsuH2891gszpWE/edit?usp=sharing">Desarrollo</a>
+            <br><br>
+            <hr>
+            <p id="copyright">© TrotaMundos</p>
+            <p id="ultimaModificacion">Última modificación: 29/04/2026</p>
+        </footer>
+
+    </body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Incluyo meta charset para que se puedan visibilizar correctamente todos los símbolos, acentos, etc -->
+        <meta charset="UTF-8"> 
+        <title>TrotaMundos - Agencia de Viajes</title>
+        <link rel="stylesheet" type="text/css" href="../CSS/viajes.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <header>
+            <img id="logo" src="../imagenes/trotamundos.png"/>
+            <h1>TrotaMundos</h1>
+
+            <form id="iniciarSesion">
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" name="usuario" required/>
+                <label for="pwd">Contraseña</label>
+                <input type="password" id="pwd" name="pwd" required/>
+                <input type="submit" id="login" name="login" value="Login" required/>
+            </form>
+
+            <a id="altaUsuario" href="altausuarios.html"><strong>Alta usuario</strong></a>
+
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="viajes.html">Viajes</a>
+                <a href="viajes_grupo.html">Viajes grupales</a>
+                <a href="ofertas.html">Ofertas</a>
+                <a href="sobre_agencia.html">Sobre nosotros</a>
+                <a href="sugerencias.html">Sugerencias</a>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Menú lateral por continentes / países -->
+            <aside id="menuViajes">
+                <h2>Destinos por continente</h2>
+                <ul>
+                    <li><strong>Europa</strong>
+                        <ul>
+                            <li><a href="viajes/Europa/viajes_francia.html">Francia</a></li>
+                            <li><a href="viajes/Europa/viajes_italia.html">Italia</a></li>
+                            <li><a href="viajes/Europa/viajes_alemania.html">Alemania</a></li>
+                            <li><a href="viajes/Europa/viajes_noruega.html">Noruega</a></li>
+                            <li><a href="viajes/Europa/viajes_suiza.html">Suiza</a></li>
+                            <li><a href="viajes/Europa/viajes_grecia.html">Grecia</a></li>
+                        </ul>
+                    </li>
+                    <li><strong>América</strong>
+                        <ul>
+                            <li><a href="viajes/America/viajes_canada.html">Canadá</a></li>
+                            <li><a href="viajes/America/viajes_eeuu.html">EE.UU.</a></li>
+                            <li><a href="viajes/America/viajes_mexico.html">México</a></li>
+                            <li><a href="viajes/America/viajes_argentina.html">Argentina</a></li>
+                            <li><a href="viajes/America/viajes_brasil.html">Brasil</a></li>
+                        </ul>
+                    </li>
+                    <li><strong>Asia</strong>
+                        <ul>
+                            <li><a href="viajes/Asia/viajes_china.html">China</a></li>
+                            <li><a href="viajes/Asia/viajes_japon.html">Japón</a></li>
+                            <li><a href="viajes/Asia/viajes_taiwan.html">Taiwán</a></li>
+                            <li><a href="viajes/Asia/viajes_tailandia.html">Tailandia</a></li>
+                            <li><a href="viajes/Asia/viajes_maldivas.html">Maldivas</a></li>
+                            <li><a href="viajes/Asia/viajes_srilanka.html">Sri Lanka</a></li>
+                        </ul>
+                    </li>  
+                    <li><strong>Oceanía</strong>
+                        <ul>
+                            <li><a href="viajes/Oceania/viajes_australia.html">Australia</a></li>
+                            <li><a href="viajes/Oceania/viajes_nuevazelanda.html">Nueva Zelanda</a></li>
+                            <li><a href="viajes/Oceania/viajes_fiji.html">Fiji</a></li>
+                        </ul>
+                    </li>   
+                    <li><strong>África</strong>
+                        <ul>
+                            <li><a href="viajes/Africa/viajes_kenia.html">Kenia</a></li>
+                            <li><a href="viajes/Africa/viajes_egipto.html">Egipto</a></li>
+                            <li><a href="viajes/Africa/viajes_tanzania.html">Tanzania</a></li>
+                        </ul>
+                    </li>  
+                </ul>
+            </aside>
+
+            <section id="listaViajes">
+                <h3 id="tituloListaViajes">Viajes recomendados</h3>
+                
+                <!-- PRIMERA FILA -->
+                <article class="viaje">
+                    <a id="enlaceViaje" href="viajes/Europa/viajes_italia.html#7">
+                        <img src="../imagenes/florencia.jpeg">
+                    </a>
+                    <h3>Florencia</h3>
+                    <p>Fechas disponibles: 1-7 Abril</p>
+                    <p id="separadorCentro"> </p>
+                    <p>Cuna del Renacimiento. Admira la Catedral de Santa María del Fiore, la Galería Uffizi y pasea por el 
+                        Ponte Vecchio mientras disfrutas de la arquitectura y el arte italiano.</p>
+                </article>
+
+                <article class="viaje">
+                    <a id="enlaceViaje" href="viajes/Europa/viajes_grecia.html#26">
+                        <img src="../imagenes/atenas.jpg">
+                    </a>
+                    <h3>Atenas</h3>
+                    <p>Fechas disponibles: 5-12 Septiembre</p>
+                    <p id="separadorCentro"> </p>
+                    <p>Cuna de la civilización occidental. Visita la Acrópolis, el Partenón y recorre el barrio de Plaka 
+                        mientras disfrutas de la historia y la gastronomía griega.</p>
+                </article>
+
+                <article class="viaje">
+                    <a id="enlaceViaje" href="viajes/Europa/viajes_suiza.html#23">
+                        <img src="../imagenes/lucerna.jpg">
+                    </a>                    
+                    <h3>Lucerna</h3>
+                    <p>Fechas disponibles: 15-22 Abril</p>
+                    <p id="separadorCentro"> </p>
+                    <p>Una de las ciudades más pintorescas de Suiza. Recorre el Puente de la Capilla, el lago de Lucerna 
+                        y disfruta de vistas a los Alpes.</p>
+                </article>
+
+                <!-- SEGUNDA FILA -->
+                 <article class="viaje">
+                    <a id="enlaceViaje" href="viajes/America/viajes_eeuu.html#41">
+                        <img src="../imagenes/nuevayork.jpg">
+                    </a>
+                    <h3>Nueva York</h3>
+                    <p>Fechas disponibles: 1-7 Abril</p>
+                    <p id="separadorCentro"> </p>
+                    <p>La ciudad que nunca duerme. Visita Times Square, Central Park, la Estatua de la Libertad 
+                        y disfruta de musicales en Broadway.</p>
+                </article>
+
+                <article class="viaje">
+                    <a id="enlaceViaje" href="viajes/America/viajes_mexico.html#44">
+                        <img src="../imagenes/cancun.jpeg">
+                    </a>
+                    <h3>Cancún</h3>
+                    <p>Fechas disponibles: 15-22 Abril</p>
+                    <p id="separadorCentro"> </p>
+                    <p>Destino caribeño con playas de arena blanca y aguas turquesas. Perfecto para relajarse, practicar 
+                        snorkel y visitar ruinas mayas cercanas como Tulum o Chichén Itzá.</p>
+                </article>
+
+                <article class="viaje">
+                    <a id="enlaceViaje" href="viajes/America/viajes_brasil.html#51">
+                        <img src="../imagenes/riodejaneiro.jpg">
+                    </a>                    
+                    <h3>Rio de Janeiro</h3>
+                    <p>Fechas disponibles: 15-22 Abril</p>
+                    <p id="separadorCentro"> </p>
+                    <p>Famosa por sus playas de Copacabana e Ipanema y el icónico Cristo Redentor. 
+                        Disfruta del ambiente festivo, el carnaval y las vistas desde el Pan de Azúcar.</p>
+                </article>
+
+                <a id="botonSiguiente" href="viajes_3.html">Siguiente</a>
+                <a id="botonAnterior" href="viajes.html">Anterior</a>
+            </section>
+        </main>
+
+        <footer>
+            <p id="sobreNosotros">SOBRE NOSOTROS</p>
+            <a href="contacto.html">Contacto</a>
+            <br>
+            <a href="https://docs.google.com/document/d/1J6dwtbxbZyRSLV7A461OkP3R2SLclDsuH2891gszpWE/edit?usp=sharing">Desarrollo</a>
+            <br><br>
+            <hr>
+            <p id="copyright">© TrotaMundos</p>
+            <p id="ultimaModificacion">Última modificación: 29/04/2026</p>
+        </footer>
+
+    </body>
+</html>

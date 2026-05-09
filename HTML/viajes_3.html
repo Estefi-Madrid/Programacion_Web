@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Incluyo meta charset para que se puedan visibilizar correctamente todos los símbolos, acentos, etc -->
+        <meta charset="UTF-8"> 
+        <title>TrotaMundos - Agencia de Viajes</title>
+        <link rel="stylesheet" type="text/css" href="../CSS/viajes.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <header>
+            <img id="logo" src="../imagenes/trotamundos.png"/>
+            <h1>TrotaMundos</h1>
+
+            <form id="iniciarSesion">
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" name="usuario" required/>
+                <label for="pwd">Contraseña</label>
+                <input type="password" id="pwd" name="pwd" required/>
+                <input type="submit" id="login" name="login" value="Login" required/>
+            </form>
+
+            <a id="altaUsuario" href="altausuarios.html"><strong>Alta usuario</strong></a>
+
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="viajes.html">Viajes</a>
+                <a href="viajes_grupo.html">Viajes grupales</a>
+                <a href="ofertas.html">Ofertas</a>
+                <a href="sobre_agencia.html">Sobre nosotros</a>
+                <a href="sugerencias.html">Sugerencias</a>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Menú lateral por continentes / países -->
+            <aside id="menuViajes">
+                <h2>Destinos por continente</h2>
+                <ul>
+                    <li><strong>Europa</strong>
+                        <ul>
+                            <li><a href="viajes/Europa/viajes_francia.html">Francia</a></li>
+                            <li><a href="viajes/Europa/viajes_italia.html">Italia</a></li>
+                            <li><a href="viajes/Europa/viajes_alemania.html">Alemania</a></li>
+                            <li><a href="viajes/Europa/viajes_noruega.html">Noruega</a></li>
+                            <li><a href="viajes/Europa/viajes_suiza.html">Suiza</a></li>
+                            <li><a href="viajes/Europa/viajes_grecia.html">Grecia</a></li>
+                        </ul>
+                    </li>
+                    <li><strong>América</strong>
+                        <ul>
+                            <li><a href="viajes/America/viajes_canada.html">Canadá</a></li>
+                            <li><a href="viajes/America/viajes_eeuu.html">EE.UU.</a></li>
+                            <li><a href="viajes/America/viajes_mexico.html">México</a></li>
+                            <li><a href="viajes/America/viajes_argentina.html">Argentina</a></li>
+                            <li><a href="viajes/America/viajes_brasil.html">Brasil</a></li>
+                        </ul>
+                    </li>
+                    <li><strong>Asia</strong>
+                        <ul>
+                            <li><a href="viajes/Asia/viajes_china.html">China</a></li>
+                            <li><a href="viajes/Asia/viajes_japon.html">Japón</a></li>
+                            <li><a href="viajes/Asia/viajes_taiwan.html">Taiwán</a></li>
+                            <li><a href="viajes/Asia/viajes_tailandia.html">Tailandia</a></li>
+                            <li><a href="viajes/Asia/viajes_maldivas.html">Maldivas</a></li>
+                            <li><a href="viajes/Asia/viajes_srilanka.html">Sri Lanka</a></li>
+                        </ul>
+                    </li>  
+                    <li><strong>Oceanía</strong>
+                        <ul>
+                            <li><a href="viajes/Oceania/viajes_australia.html">Australia</a></li>
+                            <li><a href="viajes/Oceania/viajes_nuevazelanda.html">Nueva Zelanda</a></li>
+                            <li><a href="viajes/Oceania/viajes_fiji.html">Fiji</a></li>
+                        </ul>
+                    </li>   
+                    <li><strong>África</strong>
+                        <ul>
+                            <li><a href="viajes/Africa/viajes_kenia.html">Kenia</a></li>
+                            <li><a href="viajes/Africa/viajes_egipto.html">Egipto</a></li>
+                            <li><a href="viajes/Africa/viajes_tanzania.html">Tanzania</a></li>
+                        </ul>
+                    </li>  
+                </ul>
+            </aside>
+
+            <section id="listaViajes">
+                <h3 id="tituloListaViajes">Viajes recomendados</h3>
+                
+                <!-- PRIMERA FILA -->
+                <article class="viaje">
+                    <a id="enlaceViaje" href="viajes/Asia/viajes_japon.html#61">
+                        <img src="../imagenes/tokio.jpg">
+                    </a>
+                    <h3>Tokio</h3>
+                    <p>Fechas disponibles: 1-7 Abril</p>
+                    <p id="separadorCentro"> </p>
+                    <p>Capital vibrante que combina tradición y modernidad. Visita el barrio de Shibuya, 
+                        el templo Senso-ji y disfruta de su impresionante vida urbana.</p>
+                </article>
+
+                <article class="viaje">
+                    <a id="enlaceViaje" href="viajes/Asia/viajes_japon.html#62">
+                        <img src="../imagenes/kioto.png">
+                    </a>
+                    <h3>Kioto</h3>
+                    <p>Fechas disponibles: 15-22 Abril</p>
+                    <p id="separadorCentro"> </p>
+                    <p>Corazón cultural de Japón. Descubre templos como Kinkaku-ji, pasea por el barrio de Gion y disfruta de los cerezos en flor.</p>
+                </article>
+
+                <article class="viaje">
+                    <a id="enlaceViaje" href="viajes/Asia/viajes_tailandia.html#71">
+                        <img src="../imagenes/bangkok.jpeg">
+                    </a>                    
+                    <h3>Bangkok</h3>
+                    <p>Fechas disponibles: 15-22 Abril</p>
+                    <p id="separadorCentro"> </p>
+                    <p>Vibrante capital con templos espectaculares como Wat Pho y Wat Arun, mercados flotantes y vida nocturna animada.</p>
+                </article>
+
+                <!-- SEGUNDA FILA -->
+                 <article class="viaje">
+                    <a id="enlaceViaje" href="viajes/Oceania/viajes_australia.html#91">
+                        <img src="../imagenes/sidney.jpg">
+                    </a>
+                    <h3>Sidney</h3>
+                    <p>Fechas disponibles: 1-7 Abril</p>
+                    <p id="separadorCentro"> </p>
+                    <p>Ciudad icónica con la Ópera de Sídney y el Harbour Bridge. Disfruta de playas como Bondi Beach y de su animada vida urbana.</p>
+                </article>
+
+                <article class="viaje">
+                    <a id="enlaceViaje" href="viajes/Africa/viajes_egipto.html#111">
+                        <img src="../imagenes/elcairo.jpg">
+                    </a>
+                    <h3>El Cairo</h3>
+                    <p>Fechas disponibles: 15-22 Abril</p>
+                    <p id="separadorCentro"> </p>
+                    <p>Capital histórica con las icónicas pirámides de Giza y la Esfinge. Descubre el Museo Egipcio y sumérgete en una cultura milenaria.</p>
+                </article>
+
+                <article class="viaje">
+                    <a id="enlaceViaje" href="viajes/Africa/viajes_tanzania.html#120">
+                        <img src="../imagenes/zanzibar.jpg">
+                    </a>                    
+                    <h3>Zanzibar</h3>
+                    <p>Fechas disponibles: 15-22 Abril</p>
+                    <p id="separadorCentro"> </p>
+                    <p>Encantadora ciudad histórica en la isla de Zanzíbar. Recorre Stone Town y disfruta de playas paradisíacas.</p>
+                </article>
+
+                <a id="botonAnterior" href="viajes_2.html">Anterior</a>
+            </section>
+        </main>
+
+        <footer>
+            <p id="sobreNosotros">SOBRE NOSOTROS</p>
+            <a href="contacto.html">Contacto</a>
+            <br>
+            <a href="https://docs.google.com/document/d/1J6dwtbxbZyRSLV7A461OkP3R2SLclDsuH2891gszpWE/edit?usp=sharing">Desarrollo</a>
+            <br><br>
+            <hr>
+            <p id="copyright">© TrotaMundos</p>
+            <p id="ultimaModificacion">Última modificación: 29/04/2026</p>
+        </footer>
+
+    </body>
+</html>
